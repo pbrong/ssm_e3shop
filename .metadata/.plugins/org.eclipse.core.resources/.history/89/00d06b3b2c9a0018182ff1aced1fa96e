@@ -1,0 +1,15 @@
+package com.iteason.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class TestService {
+
+	public void test() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	
+}
