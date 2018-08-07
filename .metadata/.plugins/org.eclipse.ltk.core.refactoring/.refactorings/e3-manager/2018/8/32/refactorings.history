@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;e3-manager/5.3.6.e3-manager-interface&apos; to &apos;e3-manager-interface&apos;" description="Rename resource &apos;5.3.6.e3-manager-interface&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="5.3.6.e3-manager-interface" name="e3-manager-interface" stamp="1533569667268" updateReferences="true"/>
+</session>
