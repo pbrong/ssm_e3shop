@@ -1,10 +1,12 @@
 package com.iteason.controller;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.iteason.service.TestService;
+import com.iteason.intef.TestService;
+
 
 @Controller
 public class TestController {

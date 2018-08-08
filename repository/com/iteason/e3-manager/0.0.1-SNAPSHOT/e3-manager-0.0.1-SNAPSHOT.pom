@@ -17,8 +17,30 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
+	
+	<build>
+			<plugins>
+				<!-- 配置Tomcat插件 -->
+				<plugin>
+					<groupId>org.apache.tomcat.maven</groupId>
+					<artifactId>tomcat7-maven-plugin</artifactId>
+					<configuration>
+						<path>/</path>
+						<port>8080</port>
+					</configuration>
+				</plugin>
+			</plugins>
+	</build>
+	
+	
+	
   <modules>
   	<module>e3-manager-pojo</module>
   	<module>e3-manager-dao</module>
+  	<module>e3-manager-service</module>
+  	<module>e3-manager-interface</module>
   </modules>
+  
+  
 </project>
+

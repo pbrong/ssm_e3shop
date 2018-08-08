@@ -1,0 +1,24 @@
+package com.iteason.controller;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+@Controller
+public class TestController {
+	@Autowired
+	private TestService service;
+	
+	@RequestMapping(value="/hello.action")
+	public String hello(Model model){
+		System.out.println("controller");
+		
+		service.test();
+		
+		model.addAttribute("hello","hello world!!");
+		
+		return "hello";
+	}
+}
