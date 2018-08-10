@@ -29,7 +29,7 @@
 		<property name="configLocation" value="classpath:SqlMapConfig.xml" />
 	</bean>
 	
-	
+	<!-- 加载mapper -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="com.iteason.mapper" />
 	</bean>

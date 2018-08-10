@@ -7029,3 +7029,96 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Duplicated 
 2018-08-10 13:44:55,859 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace e3shop\e3-manager-web\src\main\resources
 2018-08-10 13:44:55,861 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2018-08-10 13:44:55,861 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-10 13:45:13,757 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:45:13,757 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace e3shop\e3-manager-web\src\main\resources
+2018-08-10 13:45:13,760 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:45:13,760 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-10 13:46:14,000 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:46:14,000 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace e3shop\e3-manager-web\src\main\resources
+2018-08-10 13:46:14,002 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:46:14,003 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-10 13:47:24,604 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:47:24,605 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace e3shop\e3-manager-web\src\main\resources
+2018-08-10 13:47:24,608 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:47:24,608 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-10 13:47:28,062 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:47:28,062 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace e3shop\e3-manager-web\src\main\resources
+2018-08-10 13:47:28,064 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:47:28,065 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-10 13:47:40,514 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2018-08-10 13:47:52,162 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2018-08-10 13:48:07,415 [Worker-17] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\workspace e3shop\e3-manager-web
+2018-08-10 13:48:07,416 [Worker-17] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s "D:\workspace e3shop\apache-maven-3.3.9\conf\settings.xml" tomcat7:run
+2018-08-10 13:48:13,872 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:48:13,872 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace e3shop\e3-manager-web\src\main\resources
+2018-08-10 13:48:13,874 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:48:13,875 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-10 13:49:04,560 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:49:04,560 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace e3shop\e3-manager-web\src\main\resources
+2018-08-10 13:49:04,562 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:49:04,563 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-10 13:50:23,680 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:50:23,680 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace e3shop\e3-manager-web\src\main\resources
+2018-08-10 13:50:23,683 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:50:23,684 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-10 13:50:25,826 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:50:25,827 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace e3shop\e3-manager-web\src\main\resources
+2018-08-10 13:50:25,828 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:50:25,829 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-10 13:50:48,626 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:50:48,626 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace e3shop\e3-manager-web\src\main\resources
+2018-08-10 13:50:48,628 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:50:48,628 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-10 13:51:32,316 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:51:32,317 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace e3shop\e3-manager-web\src\main\resources
+2018-08-10 13:51:32,319 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:51:32,320 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-10 13:51:39,106 [Worker-23] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\workspace e3shop\e3-manager-web
+2018-08-10 13:51:39,106 [Worker-23] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s "D:\workspace e3shop\apache-maven-3.3.9\conf\settings.xml" tomcat7:run
+2018-08-10 13:51:43,446 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:51:43,447 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace e3shop\e3-manager-web\src\main\resources
+2018-08-10 13:51:43,449 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:51:43,450 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-10 13:52:58,790 [Worker-22] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\workspace e3shop\e3-manager-web
+2018-08-10 13:52:58,790 [Worker-22] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s "D:\workspace e3shop\apache-maven-3.3.9\conf\settings.xml" tomcat7:run
+2018-08-10 13:53:02,903 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:53:02,903 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace e3shop\e3-manager-web\src\main\resources
+2018-08-10 13:53:02,906 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:53:02,907 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-10 13:53:13,072 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:53:13,073 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace e3shop\e3-manager-web\src\main\resources
+2018-08-10 13:53:13,074 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:53:13,075 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-10 13:54:28,768 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:54:28,769 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace e3shop\e3-manager-web\src\main\resources
+2018-08-10 13:54:28,770 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:54:28,771 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-10 13:55:03,213 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:55:03,213 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace e3shop\e3-manager-web\src\main\resources
+2018-08-10 13:55:03,215 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:55:03,216 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-10 13:55:13,414 [Worker-28] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\workspace e3shop\e3-manager-web
+2018-08-10 13:55:13,415 [Worker-28] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s "D:\workspace e3shop\apache-maven-3.3.9\conf\settings.xml" tomcat7:run
+2018-08-10 13:55:17,845 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:55:17,846 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace e3shop\e3-manager-web\src\main\resources
+2018-08-10 13:55:17,847 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:55:17,848 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-10 13:56:05,321 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:56:05,321 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace e3shop\e3-manager-web\src\main\resources
+2018-08-10 13:56:05,323 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:56:05,323 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-10 13:58:25,691 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2018-08-10 13:58:55,991 [Worker-11] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\workspace e3shop\e3-manager-web
+2018-08-10 13:58:55,992 [Worker-11] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s "D:\workspace e3shop\apache-maven-3.3.9\conf\settings.xml" tomcat7:run
+2018-08-10 13:59:00,662 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:59:00,663 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace e3shop\e3-manager-web\src\main\resources
+2018-08-10 13:59:00,666 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 13:59:00,666 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-10 14:02:16,671 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 14:02:16,671 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace e3shop\e3-manager-web\src\main\resources
+2018-08-10 14:02:16,675 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 14:02:16,676 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-10 14:02:50,195 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 14:02:50,195 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace e3shop\e3-manager-web\src\main\resources
+2018-08-10 14:02:50,197 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-08-10 14:02:50,197 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
