@@ -1,0 +1,26 @@
+package com.iteason.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class ItemController {
+
+	/**
+	 * 
+	 * @author 阿荣
+	 * @Description:管理员，item列表显示
+	 * @date: 2018年8月10日 下午3:46:07
+	 * @param page
+	 * @param rows
+	 * @return
+	 */
+	@RequestMapping(value="/item/list")
+	public String findItemList(String page,String rows){
+		
+		
+		
+		return null;
+		
+	}
+}

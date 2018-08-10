@@ -1,0 +1,18 @@
+package com.iteason.controller;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.iteason.pojo.TbItem;
+
+public class testt {
+
+	@Test
+	public void testName() throws Exception {
+		ApplicationContext context = new ClassPathXmlApplicationContext("classpath:*.xml");
+		 context.getBean(tbi);
+	}
+}

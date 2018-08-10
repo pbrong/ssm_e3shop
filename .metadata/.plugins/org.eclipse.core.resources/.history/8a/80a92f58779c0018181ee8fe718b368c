@@ -1,0 +1,13 @@
+package com.iteason.controller;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class testt {
+
+	@Test
+	public void testName() throws Exception {
+		
+	}
+}

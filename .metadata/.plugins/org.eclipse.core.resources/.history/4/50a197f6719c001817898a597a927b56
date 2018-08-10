@@ -1,0 +1,5 @@
+package com.iteason.pojo;
+
+public class EasyUIDatagridResult {
+
+}

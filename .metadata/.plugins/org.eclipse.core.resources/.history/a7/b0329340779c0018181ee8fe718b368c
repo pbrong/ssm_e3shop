@@ -1,0 +1,23 @@
+package com.iteason.service;
+
+import java.io.IOException;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.github.pagehelper.PageHelper;
+import com.iteason.mapper.TbItemMapper;
+import com.iteason.pojo.TbItemExample;
+
+public class app {
+	public static void main(String[] args) throws IOException {
+		ApplicationContext context = new ClassPathXmlApplicationContext("classpath:*.xml");
+		TbItemMapper mapper = context.getBean(TbItemMapper.class);
+		//
+		PageHelper.startPage(1,30);
+		TbItemExample example = new TbItemExample();
+		mapper.selectByExample(example );
+	
+	}
+	
+}
