@@ -9,4 +9,8 @@
 <fullyQualifiedTypeName name="com.iteason.service.TestService"/>
 <fullyQualifiedTypeName name="com.iteason.mapper.TbItemCatMapper"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.iteason.intef.TestService"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 </qualifiedTypeNameHistroy>

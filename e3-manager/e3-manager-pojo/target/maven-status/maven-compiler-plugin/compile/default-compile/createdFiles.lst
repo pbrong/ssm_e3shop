@@ -9,12 +9,10 @@ com\iteason\pojo\TbItemParamExample$GeneratedCriteria.class
 com\iteason\pojo\TbOrderItemExample$GeneratedCriteria.class
 com\iteason\pojo\TbContent.class
 com\iteason\pojo\TbOrderExample$Criteria.class
-META-INF\maven\com.iteason\e3-manager-pojo\pom.properties
 com\iteason\pojo\TbOrderExample$GeneratedCriteria.class
 com\iteason\pojo\TbOrderItemExample.class
 com\iteason\pojo\TbUser.class
 com\iteason\pojo\TbItemParamItemExample.class
-META-INF\MANIFEST.MF
 com\iteason\pojo\TbItemParamItemExample$Criteria.class
 com\iteason\pojo\TbContentCategoryExample$Criterion.class
 com\iteason\pojo\TbItemParam.class
@@ -41,7 +39,6 @@ com\iteason\pojo\TbContentExample$Criteria.class
 com\iteason\pojo\TbItemCatExample$Criterion.class
 com\iteason\pojo\TbItemDescExample$Criterion.class
 com\iteason\pojo\TbItemExample.class
-META-INF\maven\com.iteason\e3-manager-pojo\pom.xml
 com\iteason\pojo\TbContentCategory.class
 com\iteason\pojo\TbOrderExample.class
 com\iteason\pojo\TbItemDescExample.class

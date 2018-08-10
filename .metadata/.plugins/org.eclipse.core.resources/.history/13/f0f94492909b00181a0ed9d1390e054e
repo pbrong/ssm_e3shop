@@ -1,0 +1,7 @@
+package com.iteason.intef;
+@interface
+public interface TestService {
+
+	void test();
+
+}
