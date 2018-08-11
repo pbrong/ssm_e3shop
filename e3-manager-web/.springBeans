@@ -9,6 +9,7 @@
 	<configs>
 	</configs>
 	<autoconfigs>
+		<config>conf/springmvc.xml</config>
 	</autoconfigs>
 	<configSets>
 	</configSets>
