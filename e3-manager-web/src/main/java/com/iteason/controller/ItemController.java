@@ -50,6 +50,7 @@ public class ItemController {
 	public List<EsayUIZtreeNode> findCatZtree(@RequestParam(name="id",defaultValue="0")
 			Long parentId){
 		List<EsayUIZtreeNode> list  = 	itemService.findCatZtree(parentId);
+		
 		return list;
 	}
 }

@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1534153134176_1" label="fastdfs_client" name="fastdfs_client">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/fastdfs_client" type="4"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1533544459351_0" label="Window Working Set" name="Aggregate for window 1533544459350"/>
 </workingSetManager>

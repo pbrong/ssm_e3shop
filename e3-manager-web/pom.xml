@@ -82,6 +82,12 @@
 			<groupId>com.github.sgroschupf</groupId>
 			<artifactId>zkclient</artifactId>
 		</dependency>
+		<!-- 图片服务器 -->
+		<dependency>
+			<groupId>fastdfs_client</groupId>
+			  <artifactId>fastdfs_client</artifactId>
+			  <version>1.25</version>
+		</dependency>
   </dependencies>
   
   <build>
