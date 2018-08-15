@@ -6,6 +6,17 @@
 	</welcome-file-list>
 	
 	
+	<!-- 获得项目路径 -->
+	<context-param>  
+        <param-name>webAppRootKey</param-name>   
+        <param-value>test.webapp</param-value>  
+	</context-param>  
+	<listener>   
+	        <listener-class>org.springframework.web.util.WebAppRootListener</listener-class>   
+	</listener>
+	
+	
+	
 	<!-- 加载spring容器 -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>

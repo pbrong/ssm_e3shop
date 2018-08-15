@@ -1,4 +1,5 @@
 #NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
-#Mon May 16 23:15:22 CST 2016
-log4j-1.2.16.jar>central=
+#Tue Aug 14 22:20:58 CST 2018
 log4j-1.2.16.pom>central=
+log4j-1.2.16.jar>central=
+log4j-1.2.16-sources.jar>central=
