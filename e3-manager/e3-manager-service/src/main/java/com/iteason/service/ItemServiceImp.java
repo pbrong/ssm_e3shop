@@ -1,7 +1,10 @@
 package com.iteason.service;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.UUID;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -11,18 +14,22 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.iteason.intef.ItemService;
 import com.iteason.mapper.TbItemCatMapper;
+import com.iteason.mapper.TbItemDescMapper;
 import com.iteason.mapper.TbItemMapper;
 import com.iteason.pojo.EasyUIDatagridResult;
 import com.iteason.pojo.EsayUIZtreeNode;
 import com.iteason.pojo.TbItem;
 import com.iteason.pojo.TbItemCat;
 import com.iteason.pojo.TbItemCatExample;
+import com.iteason.pojo.TbItemDesc;
 import com.iteason.pojo.TbItemExample;
 import com.iteason.pojo.TbItemExample.Criteria;
+import com.iteason.utils.IDUtils;
 @Service
 public class ItemServiceImp implements ItemService {
 	
-	
+	@Autowired
+	private TbItemDescMapper tbItemDescMapper;
 	
 	@Autowired
 	private TbItemMapper tbItemMapper;
@@ -66,6 +73,44 @@ public class ItemServiceImp implements ItemService {
 		}
 		return nodeList;
 	}
+	/**
+	 * 保存商品及其描述
+	 */
+	@Override
+	public void saveItem(TbItem item, String desc) {
+		 /*
+		  * `id` bigint(20) NOT NULL COMMENT '商品id，同时也是商品编号',
+		  `title` varchar(100) NOT NULL COMMENT '商品标题',
+		  `sell_point` varchar(500) DEFAULT NULL COMMENT '商品卖点',
+		  `price` bigint(20) NOT NULL COMMENT '商品价格，单位为：分',
+		  `num` int(10) NOT NULL COMMENT '库存数量',
+		  `barcode` varchar(30) DEFAULT NULL COMMENT '商品条形码',
+		  `image` varchar(500) DEFAULT NULL COMMENT '商品图片',
+		  `cid` bigint(10) NOT NULL COMMENT '所属类目，叶子类目',
+		  `status` tinyint(4) NOT NULL DEFAULT '1' COMMENT '商品状态，1-正常，2-下架，3-删除',
+		  `created` datetime NOT NULL COMMENT '创建时间',
+		  `updated` datetime NOT NULL COMMENT '更新时间' 
+		  */
+		//补全TbItem属性
+		Long itemId = IDUtils.genItemId();//商品id
+		item.setId(itemId);
+		item.setCreated(new Date());	//商品创建时间
+		item.setUpdated(new Date());	//商品更新时间
+		item.setStatus((byte)1);		//商品状态，1-正常，2-下架，3-删除
+		//插入tb_item表
+		tbItemMapper.insert(item);
+		
+		//补全TbItemDesc属性
+		TbItemDesc tbItemDesc = new TbItemDesc();
+		tbItemDesc.setItemId(itemId);//商品id
+		tbItemDesc.setCreated(new Date());//商品描述创建时间
+		tbItemDesc.setUpdated(new Date());//商品描述更新时间
+		tbItemDesc.setItemDesc(desc);//商品描述
+		//插入 tb_item_desc表
+		tbItemDescMapper.insert(tbItemDesc);
+		
+		
+		}
 	
 	
 

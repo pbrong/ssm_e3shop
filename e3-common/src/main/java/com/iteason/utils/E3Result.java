@@ -32,6 +32,7 @@ public class E3Result implements Serializable{
     }
 
     public static E3Result ok() {
+    	
         return new E3Result(null);
     }
 

@@ -1,4 +1,4 @@
-package com.iteason.fastdfs;
+/*package com.iteason.fastdfs;
 
 import org.csource.fastdfs.ClientGlobal;
 
@@ -41,3 +41,4 @@ public class FastDfsTest {
 		System.out.println(string);
 	}
 }
+*/

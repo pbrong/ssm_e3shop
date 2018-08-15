@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.iteason.intef.ItemService;
 import com.iteason.pojo.EasyUIDatagridResult;
 import com.iteason.pojo.EsayUIZtreeNode;
+import com.iteason.pojo.TbItem;
+import com.iteason.utils.E3Result;
 
 @Controller
 public class ItemController {
@@ -52,5 +54,28 @@ public class ItemController {
 		List<EsayUIZtreeNode> list  = 	itemService.findCatZtree(parentId);
 		
 		return list;
+	}
+	
+	/**
+	 * 
+	 * @author 阿荣
+	 * @Description:保存商品到TbItem表和TbItemDesc表
+	 * @date: 2018年8月15日 下午1:46:45
+	 * @param item
+	 * @param desc
+	 * @return
+	 */
+	@RequestMapping(value="/item/save")
+	@ResponseBody
+	public E3Result saveItem(TbItem item,String desc){
+		try{
+			itemService.saveItem(item,desc);
+			return E3Result.ok();
+		}catch(Exception e){
+			e.printStackTrace();
+			return null;
+		}
+		
+		
 	}
 }
