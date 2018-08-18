@@ -7,8 +7,9 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="e3-shop-show"/>
+			<item value="e3-parent"/>
 			<item value="e3-manager-web"/>
-			<item value="e3-manager"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -71,6 +72,7 @@
 	</section>
 	<section name="MavenModuleWizardParentPage">
 		<list key="moduleName">
+			<item value="e3-shop-show"/>
 			<item value="e3-manager-web"/>
 			<item value="e3-manager-service"/>
 			<item value="5.3.6.e3-manager-interface"/>
@@ -102,13 +104,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="org.e3.manager.web"/>
+			<item value="org.e3.shop.show"/>
 		</list>
 		<list key="groupId">
 			<item value="com.iteason"/>
 		</list>
 		<list key="artifactId">
-			<item value="e3-manager-web"/>
+			<item value="e3-shop-show"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

@@ -175,11 +175,13 @@ public class ItemServiceImp implements ItemService {
 	 */
 	@Override
 	public void updateItem(TbItem item, String desc) {
+		item.setUpdated(new Date());	//商品更新时间
+		item.setStatus((byte)1);		//商品状态，1-正常，2-下架，3-删除
 		 TbItemExample example1 = new TbItemExample();
 		 Criteria criteria1 = example1.createCriteria();
 		 criteria1.andIdEqualTo(item.getId());
 		 //根据商品id更新商品
-		tbItemMapper.updateByExample(item, example1);
+		tbItemMapper.updateByExampleSelective(item, example1);
 		
 		//更新描述
 		
@@ -192,7 +194,7 @@ public class ItemServiceImp implements ItemService {
 		criteria2.andItemIdEqualTo(item.getId());
 		
 		//update
-		tbItemDescMapper.updateByExample(tbItemDesc, example2);
+		tbItemDescMapper.updateByExampleSelective(tbItemDesc, example2);
 	}
 
 }

@@ -14,7 +14,6 @@
 <fullyQualifiedTypeName name="com.iteason.mapper.TbItemMapper"/>
 <fullyQualifiedTypeName name="com.github.pagehelper.PageHelper"/>
 <fullyQualifiedTypeName name="com.github.pagehelper.PageInfo"/>
-<fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="com.iteason.pojo.EsayUIZtreeNode"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
 <fullyQualifiedTypeName name="java.util.List"/>
@@ -41,14 +40,15 @@
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="com.iteason.utils.JsonUtils"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
-<fullyQualifiedTypeName name="com.iteason.utils.E3Result"/>
-<fullyQualifiedTypeName name="com.iteason.pojo.TbItem"/>
 <fullyQualifiedTypeName name="java.util.UUID"/>
 <fullyQualifiedTypeName name="com.iteason.utils.IDUtils"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="com.iteason.pojo.TbItemDesc"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="com.iteason.mapper.TbItemDescMapper"/>
+<fullyQualifiedTypeName name="com.iteason.pojo.TbItem"/>
+<fullyQualifiedTypeName name="com.iteason.pojo.TbItemDesc"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="com.iteason.utils.E3Result"/>
 </qualifiedTypeNameHistroy>

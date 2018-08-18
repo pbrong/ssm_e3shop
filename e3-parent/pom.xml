@@ -262,4 +262,7 @@
 	</build>
 	
 	
+	<modules>
+		<module>e3-shop-show</module>
+	</modules>
 </project>
