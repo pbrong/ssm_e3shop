@@ -56,8 +56,9 @@ public class ContentServiceImp implements ContentService {
 		newCatagory.setName(name);
 		newCatagory.setStatus(1);
 		newCatagory.setUpdated(new Date());
+		
 		tbContentCategoryMapper.insertSelective(newCatagory);
-		return E3Result.ok();
+		return null;
 	}
 
 }

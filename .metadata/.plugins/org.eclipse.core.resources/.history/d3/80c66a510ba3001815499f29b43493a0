@@ -1,7 +1,6 @@
 package com.iteason.service;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +12,6 @@ import com.iteason.pojo.EsayUIZtreeNode;
 import com.iteason.pojo.TbContentCategory;
 import com.iteason.pojo.TbContentCategoryExample;
 import com.iteason.pojo.TbContentCategoryExample.Criteria;
-import com.iteason.utils.E3Result;
 @Service
 public class ContentServiceImp implements ContentService {
 
@@ -41,23 +39,6 @@ public class ContentServiceImp implements ContentService {
 			nodeList.add(node);
 		}
 			return nodeList;
-	}
-
-	/**
-	 * 添加商品目录
-	 */
-	@Override
-	public E3Result createCatagory(Long parentId, String name) {
-		TbContentCategory newCatagory = new TbContentCategory();
-		//补全属性(id由mybatis生成)
-		newCatagory.setParentId(parentId); 
-		newCatagory.setCreated(new Date());
-		newCatagory.setIsParent(false);
-		newCatagory.setName(name);
-		newCatagory.setStatus(1);
-		newCatagory.setUpdated(new Date());
-		tbContentCategoryMapper.insertSelective(newCatagory);
-		return E3Result.ok();
 	}
 
 }

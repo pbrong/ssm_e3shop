@@ -1,7 +1,6 @@
 package com.iteason.service;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,15 +48,8 @@ public class ContentServiceImp implements ContentService {
 	@Override
 	public E3Result createCatagory(Long parentId, String name) {
 		TbContentCategory newCatagory = new TbContentCategory();
-		//补全属性(id由mybatis生成)
-		newCatagory.setParentId(parentId); 
-		newCatagory.setCreated(new Date());
-		newCatagory.setIsParent(false);
-		newCatagory.setName(name);
-		newCatagory.setStatus(1);
-		newCatagory.setUpdated(new Date());
-		tbContentCategoryMapper.insertSelective(newCatagory);
-		return E3Result.ok();
+		tbContentCategoryMapper.insertSelective(newCatagory );
+		return null;
 	}
 
 }
