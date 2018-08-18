@@ -116,9 +116,7 @@
   
   <insert id="insertSelective" parameterType="com.iteason.pojo.TbContentCategory" >
     <!-- 使用mybatis自动生成id -->
-    <selectKey keyProperty="id"  resultType="long"  order="AFTER">
-    	SELECT LAST_INSERT_ID() 
-    </selectKey>
+    <selectKey></selectKey>
     
     insert into tb_content_category
     <trim prefix="(" suffix=")" suffixOverrides="," >
