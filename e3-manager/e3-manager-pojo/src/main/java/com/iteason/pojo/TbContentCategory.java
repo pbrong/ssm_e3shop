@@ -5,11 +5,11 @@ import java.util.Date;
 public class TbContentCategory {
     private Long id;
 
-    private Long parentId;
+    private Long parentId;//父类目ID=0时，代表的是一级的类目
 
     private String name;
 
-    private Integer status;
+    private Integer status = 1;//可选值:1(正常),2(删除)
 
     private Integer sortOrder;
 

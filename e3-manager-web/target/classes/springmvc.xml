@@ -26,6 +26,9 @@
 	<dubbo:reference interface="com.iteason.intef.ItemService" id="itemService" timeout="300000" />
 	
 	
+	<dubbo:registry protocol="zookeeper" address="47.106.133.57:2181"/>	
+	<dubbo:reference interface="com.iteason.intef.ContentService" id="contentService" timeout="300000" />
+	
 	<!-- 排除拦截 -->
 	<mvc:resources location="/css/" mapping="/css/**"/>
 	<mvc:resources location="/js/" mapping="/js/**"/>

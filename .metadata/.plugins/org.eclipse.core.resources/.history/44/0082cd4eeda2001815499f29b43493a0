@@ -1,0 +1,8 @@
+package com.iteason.intef;
+
+public class Snippet {
+	public static void main(String[] args) {
+		ContentService
+	}
+}
+

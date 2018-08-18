@@ -1,0 +1,24 @@
+package com.iteason.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.iteason.intef.ContentService;
+import com.iteason.mapper.TbContentCategoryMapper;
+import com.iteason.pojo.EsayUIZtreeNode;
+@Service
+public class ContentServiceImp implements ContentService {
+
+	@Autowired
+	private TbContentCategoryMapper tbContentCategoryMapper;
+	
+	
+	@Override
+	public List<EsayUIZtreeNode> findContentCatagory(Long parentId) {
+		 
+		return null;
+	}
+
+}

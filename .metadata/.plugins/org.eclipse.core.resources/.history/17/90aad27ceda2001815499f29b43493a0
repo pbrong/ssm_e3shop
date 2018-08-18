@@ -1,0 +1,5 @@
+package com.iteason.intef;
+
+public interface ContentService {
+
+}

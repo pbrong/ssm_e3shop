@@ -52,6 +52,7 @@ public class ItemController {
 	@ResponseBody
 	public List<EsayUIZtreeNode> findCatZtree(@RequestParam(name="id",defaultValue="0")
 			Long parentId){
+		//如果该节点为closed，那么点击后会传输该节点的标识，默认为id
 		List<EsayUIZtreeNode> list  = 	itemService.findCatZtree(parentId);
 		
 		return list;
