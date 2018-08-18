@@ -40,7 +40,10 @@ public class ContentController {
 	@RequestMapping(value="/content/category/create")
 	@ResponseBody
 	public E3Result createCatagory(Long parentId,String name){
-		E3Result e3Result = contentService.createCatagory(parentId,name);
-		return e3Result;
+		
+		
+		
+		return null;
+		
 	}
 }

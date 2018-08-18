@@ -41,6 +41,6 @@ public class ContentController {
 	@ResponseBody
 	public E3Result createCatagory(Long parentId,String name){
 		E3Result e3Result = contentService.createCatagory(parentId,name);
-		return e3Result;
+		return null;
 	}
 }

@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.iteason.intef.ContentService;
 import com.iteason.pojo.EsayUIZtreeNode;
-import com.iteason.utils.E3Result;
 
 @Controller
 public class ContentController {
@@ -29,18 +28,5 @@ public class ContentController {
 	public List<EsayUIZtreeNode> findContentCatagory(@RequestParam(name="id",defaultValue="0")Long parentId){
 		List<EsayUIZtreeNode> list = contentService.findContentCatagory(parentId);
 		return list;
-	}
-	/**
-	 * 
-	 * @author 阿荣
-	 * @Description:增加商品目录
-	 * @date: 2018年8月19日 上午1:19:43
-	 * @return
-	 */
-	@RequestMapping(value="/content/category/create")
-	@ResponseBody
-	public E3Result createCatagory(Long parentId,String name){
-		E3Result e3Result = contentService.createCatagory(parentId,name);
-		return e3Result;
 	}
 }
