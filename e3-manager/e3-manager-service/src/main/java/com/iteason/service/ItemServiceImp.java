@@ -22,6 +22,7 @@ import com.iteason.pojo.TbItem;
 import com.iteason.pojo.TbItemCat;
 import com.iteason.pojo.TbItemCatExample;
 import com.iteason.pojo.TbItemDesc;
+import com.iteason.pojo.TbItemDescExample;
 import com.iteason.pojo.TbItemExample;
 import com.iteason.pojo.TbItemExample.Criteria;
 import com.iteason.utils.IDUtils;
@@ -168,6 +169,30 @@ public class ItemServiceImp implements ItemService {
 	@Override
 	public TbItemDesc desc(String id) {
 		return  tbItemDescMapper.selectByPrimaryKey(Long.parseLong(id));
+	}
+	/**
+	 * update item & desc
+	 */
+	@Override
+	public void updateItem(TbItem item, String desc) {
+		 TbItemExample example1 = new TbItemExample();
+		 Criteria criteria1 = example1.createCriteria();
+		 criteria1.andIdEqualTo(item.getId());
+		 //根据商品id更新商品
+		tbItemMapper.updateByExample(item, example1);
+		
+		//更新描述
+		
+		TbItemDesc tbItemDesc = new TbItemDesc();
+		tbItemDesc.setItemDesc(desc);
+		TbItemDescExample example2 = new TbItemDescExample();
+		com.iteason.pojo.TbItemDescExample.Criteria criteria2 = example2.createCriteria();
+		
+		//id
+		criteria2.andItemIdEqualTo(item.getId());
+		
+		//update
+		tbItemDescMapper.updateByExample(tbItemDesc, example2);
 	}
 
 }

@@ -171,4 +171,28 @@ public class ItemController {
 		}
 		
 	}
+	
+	/**
+	 * 
+	 * @author 阿荣
+	 * @Description:update item
+	 * @date: 2018年8月18日 下午12:21:52
+	 * @param item
+	 * @param desc
+	 * @return
+	 */
+	@RequestMapping(value="/rest/item/update")
+	@ResponseBody
+	public E3Result update(TbItem item,String desc){
+		
+		try{
+			itemService.updateItem(item,desc);
+			return E3Result.ok();
+		}catch(Exception e){
+			e.printStackTrace();
+			return E3Result.build(500, "error");
+		}
+		
+		
+	}
 }

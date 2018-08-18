@@ -23,4 +23,6 @@ public interface ItemService {
 
 	TbItemDesc desc(String id);
 
+	void updateItem(TbItem item, String desc);
+
 }
