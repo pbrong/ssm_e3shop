@@ -150,7 +150,7 @@ public class ItemServiceImp implements ItemService {
 		  for (String idString : idList) {
 			long idLong = Long.parseLong(idString);
 			TbItem tbItem = new TbItem();
-			//s架属性
+			//下架属性
 			tbItem.setStatus((byte)1);
 			//条件
 			TbItemExample example = new TbItemExample();

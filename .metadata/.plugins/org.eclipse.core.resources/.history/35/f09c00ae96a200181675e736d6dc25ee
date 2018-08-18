@@ -128,25 +128,12 @@ public class ItemController {
 		}
 	}
 	
-	/**
-	 * 
-	 * @author 阿荣
-	 * @Description:商品上架
-	 * @date: 2018年8月18日 上午11:27:12
-	 * @param ids
-	 * @return
-	 */
+	
 	@RequestMapping(value="/rest/item/reshelf")
 	@ResponseBody
 	public E3Result reshelf(String ids){
-		try {
-			itemService.reshelf(ids);
-			return E3Result.ok();
-		} catch (Exception e) {
-			//上架失败
-			e.printStackTrace();
-			return null;
-		}
 		
+		
+		return null;
 	}
 }

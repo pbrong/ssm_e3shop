@@ -18,6 +18,4 @@ public interface ItemService {
 
 	void instock(String ids);
 
-	void reshelf(String ids);
-
 }

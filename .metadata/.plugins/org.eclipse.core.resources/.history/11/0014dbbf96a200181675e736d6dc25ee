@@ -139,14 +139,8 @@ public class ItemController {
 	@RequestMapping(value="/rest/item/reshelf")
 	@ResponseBody
 	public E3Result reshelf(String ids){
-		try {
-			itemService.reshelf(ids);
-			return E3Result.ok();
-		} catch (Exception e) {
-			//上架失败
-			e.printStackTrace();
-			return null;
-		}
 		
+		
+		return null;
 	}
 }
