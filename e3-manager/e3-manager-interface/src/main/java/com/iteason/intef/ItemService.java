@@ -14,4 +14,8 @@ public interface ItemService {
 
 	void saveItem(TbItem item, String desc);
 
+	void delete(String[] idList);
+
+	void instock(String ids);
+
 }

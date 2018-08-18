@@ -17,6 +17,20 @@
 		padding: 10px 10px 10px 10px;
 	}
 </style>
+
+	<!-- 欢迎 -->
+	<script type="text/javascript">
+		$(function(){
+			$.messager.show({
+				title:'欢迎信息',
+				msg:'欢迎您管理员',
+				timeout:3000,
+				showType:'slide'
+			});
+		});
+	
+	</script>
+	
 </head>
 <body class="easyui-layout">
 	
@@ -55,8 +69,30 @@
     </div>
     <div data-options="region:'center',title:''">
     	<div id="tabs" class="easyui-tabs">
-		    <div title="首页" style="padding:20px;">
-		    	<img alt="" src="/image/f5fe1218bf3098984ec744bf993ee2fd.jpg">
+    	
+    	<script type="text/javascript">
+    		//每三秒调用一次图片轮播函数
+    		var timer = setInterval("pictureShow()", 3000);
+    		
+    		var number = 1;
+    		
+    		function pictureShow(){
+    			//第二张图片
+    			if(number < 3){
+    				number++;
+    			}else{
+    				number = 1;
+    			}
+    			
+    			$("#pictureShow").html("<img src='/image/pictureShow"+number+".jpg'>");
+    			 
+    		}
+    		
+    		
+    	
+    	</script>
+		    <div title="首页" style="padding:20px;" id="pictureShow">
+		   	<img src='/image/pictureShow1.jpg'>
 		    </div>
 		</div>
     </div>
@@ -88,5 +124,7 @@ $(function(){
 });
 setInterval("document.getElementById('nowTime').innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);
 </script>
+
+
 </body>
 </html>

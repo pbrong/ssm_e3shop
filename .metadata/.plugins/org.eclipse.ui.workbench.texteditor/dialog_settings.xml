@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="picFileUpload" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="picFileUpload"/>
+			<item value="刪除"/>
+			<item value="s"/>
+			<item value="E3Result"/>
+			<item value="ok"/>
+			<item value="status"/>
+			<item value="itemAddForm"/>
 			<item value="\"/>
-			<item value=""/>
-			<item value="post"/>
-			<item value="datagrid"/>
-			<item value="dub"/>
-			<item value="com.taotao"/>
-			<item value="tomcat"/>
+			<item value="picFileUpload"/>
 		</list>
 		<list key="replacehistory">
 			<item value="/"/>

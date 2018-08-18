@@ -1,0 +1,19 @@
+package com.iteason.intef;
+
+import java.util.List;
+
+import com.iteason.pojo.EasyUIDatagridResult;
+import com.iteason.pojo.EsayUIZtreeNode;
+import com.iteason.pojo.TbItem;
+
+public interface ItemService {
+
+	EasyUIDatagridResult findItemList(int page, int rows);
+
+	List<EsayUIZtreeNode> findCatZtree(Long parentId);
+
+	void saveItem(TbItem item, String desc);
+
+	void delete(String[] idList);
+
+}

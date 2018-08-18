@@ -78,4 +78,53 @@ public class ItemController {
 		
 		
 	}
+	
+	/**
+	 * 
+	 * @author 阿荣
+	 * @Description:根据ids批量删除商品
+	 * @date: 2018年8月18日 上午10:56:10
+	 * @param ids
+	 * @return
+	 */
+	@RequestMapping(value="/rest/item/delete")
+	@ResponseBody
+	public E3Result deleteItem(String ids){
+		
+		String[] idList = ids.split(",");
+		
+		try {
+			itemService.delete(idList);
+			return E3Result.ok();
+		} catch (Exception e) {
+			//删除失败
+			e.printStackTrace();
+			return null;
+		}
+		
+		
+		
+	}
+	
+	/**
+	 * 
+	 * @author 阿荣
+	 * @Description:根据ids下架商品
+	 * @date: 2018年8月18日 上午11:13:22
+	 * @param ids
+	 * @return
+	 */
+	@RequestMapping(value="/rest/item/instock")
+	@ResponseBody
+	public E3Result instock(String ids){
+		
+		try {
+			itemService.instock(ids);
+			return E3Result.ok();
+		} catch (Exception e) {
+			//下架失败
+			e.printStackTrace();
+			return null;
+		}
+	}
 }

@@ -111,7 +111,37 @@ public class ItemServiceImp implements ItemService {
 		
 		
 		}
-	
-	
+
+	/**
+	 * 批量删除
+	 */
+	@Override
+	public void delete(String[] idList) {
+		
+		for(String idString:idList){
+			long idLong = Long.parseLong(idString);
+			tbItemMapper.deleteByPrimaryKey(idLong);
+		}
+	}
+	/**
+	 * 商品下架
+	 */
+	@Override
+	public void instock(String ids) {
+		  String[] idList = ids.split(",");
+		  for (String idString : idList) {
+			long idLong = Long.parseLong(idString);
+			TbItem tbItem = new TbItem();
+			//下架属性
+			tbItem.setStatus((byte) 2);
+			//条件
+			TbItemExample example = new TbItemExample();
+			Criteria criteria = example.createCriteria();
+			//根据id更新属性
+			criteria.andIdEqualTo(idLong);
+			//更新
+			tbItemMapper.updateByExampleSelective(tbItem, example);
+		}
+	}
 
 }
