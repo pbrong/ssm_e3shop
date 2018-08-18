@@ -162,5 +162,12 @@ public class ItemServiceImp implements ItemService {
 		}
 		
 	}
+	/**
+	 * 商品描述的回显
+	 */
+	@Override
+	public TbItemDesc desc(String id) {
+		return  tbItemDescMapper.selectByPrimaryKey(Long.parseLong(id));
+	}
 
 }

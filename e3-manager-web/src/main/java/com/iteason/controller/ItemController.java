@@ -12,6 +12,7 @@ import com.iteason.intef.ItemService;
 import com.iteason.pojo.EasyUIDatagridResult;
 import com.iteason.pojo.EsayUIZtreeNode;
 import com.iteason.pojo.TbItem;
+import com.iteason.pojo.TbItemDesc;
 import com.iteason.utils.E3Result;
 
 @Controller
@@ -146,6 +147,27 @@ public class ItemController {
 			//上架失败
 			e.printStackTrace();
 			return null;
+		}
+		
+	}
+	
+	/**
+	 * 
+	 * @author 阿荣
+	 * @Description:商品描述的回显
+	 * @date: 2018年8月18日 上午11:55:36
+	 * @param id
+	 * @return
+	 */
+	@RequestMapping(value="/rest/item/query/item/desc")
+	@ResponseBody
+	public E3Result desc(String id){
+		try {
+			TbItemDesc data = itemService.desc(id);
+			return E3Result.ok(data);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return E3Result.build(500, "error");
 		}
 		
 	}

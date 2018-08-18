@@ -5,6 +5,7 @@ import java.util.List;
 import com.iteason.pojo.EasyUIDatagridResult;
 import com.iteason.pojo.EsayUIZtreeNode;
 import com.iteason.pojo.TbItem;
+import com.iteason.pojo.TbItemDesc;
 
 public interface ItemService {
 
@@ -19,5 +20,7 @@ public interface ItemService {
 	void instock(String ids);
 
 	void reshelf(String ids);
+
+	TbItemDesc desc(String id);
 
 }
