@@ -61,7 +61,7 @@ public class ContentController {
 	@ResponseBody
 	public E3Result saveContent(TbContent tbContent){
 		//单图片上传地址缺少前缀（待解决）
-		tbContent.setPic(IMAGE_ADDR+tbContent.getPic());
+		tbContent.setPic("http://localhost:8082"+tbContent.getPic());
 		
 		E3Result e3Result = contentService.saveContent(tbContent);
 		return e3Result;
