@@ -51,10 +51,6 @@
 	<dubbo:protocol    name="dubbo" port="20880" />
 	<!-- 声明需要暴露的服务接口 -->
 	<dubbo:service  interface="com.iteason.intef.ItemService" ref="itemServiceImp"/>
-	
-	<!-- 用dubbo协议在20881端口暴露服务 -->
-	<dubbo:protocol    name="dubbo" port="20881" />
-	<!-- 声明需要暴露的服务接口 -->
 	<dubbo:service  interface="com.iteason.intef.ContentService" ref="contentServiceImp"/>
 	
 	

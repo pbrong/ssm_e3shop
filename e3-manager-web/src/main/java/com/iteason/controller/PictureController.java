@@ -24,6 +24,10 @@ public class PictureController {
 	//读取配置文件中的图片服务器地址
 	@Value("${IMAGE_SERVER_URL}")
 	private String IMAGE_SERVER_URL;
+	
+	//图片地址前缀
+	@Value("${IMAGE_ADDR}")
+	private String IMAGE_ADDR;
 	/**
 	 * 
 	 * @author 阿荣
@@ -82,7 +86,7 @@ public class PictureController {
 		
 		Map map = new HashMap<>();
 		map.put("error", 0);
-		map.put("url","http://localhost:8082/image/"+filename);
+		map.put("url", IMAGE_ADDR+filename);
 		return JsonUtils.objectToJson(map);
 	}
 }

@@ -9,7 +9,9 @@ import org.springframework.stereotype.Service;
 
 import com.iteason.intef.ContentService;
 import com.iteason.mapper.TbContentCategoryMapper;
+import com.iteason.mapper.TbContentMapper;
 import com.iteason.pojo.EsayUIZtreeNode;
+import com.iteason.pojo.TbContent;
 import com.iteason.pojo.TbContentCategory;
 import com.iteason.pojo.TbContentCategoryExample;
 import com.iteason.pojo.TbContentCategoryExample.Criteria;
@@ -20,6 +22,9 @@ public class ContentServiceImp implements ContentService {
 	@Autowired
 	private TbContentCategoryMapper tbContentCategoryMapper;
 	
+	
+	@Autowired
+	private TbContentMapper tbContentMapper;
 	
 	@Override
 	public List<EsayUIZtreeNode> findContentCatagory(Long parentId) {
@@ -67,6 +72,17 @@ public class ContentServiceImp implements ContentService {
 		tbContentCategoryMapper.updateByExampleSelective(parentCatagory, example);
 		//执行插入新目录操作
 		tbContentCategoryMapper.insertSelective(newCatagory);
+		return E3Result.ok();
+	}
+	/**
+	 * 保存内容
+	 */
+	@Override
+	public E3Result saveContent(TbContent tbContent) {
+		//补全content属性
+		tbContent.setCreated(new Date());
+		tbContent.setUpdated(new Date());
+		tbContentMapper.insert(tbContent);
 		return E3Result.ok();
 	}
 

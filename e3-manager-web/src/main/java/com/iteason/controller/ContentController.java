@@ -3,6 +3,7 @@ package com.iteason.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -10,11 +11,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.iteason.intef.ContentService;
 import com.iteason.pojo.EsayUIZtreeNode;
+import com.iteason.pojo.TbContent;
 import com.iteason.utils.E3Result;
 
 @Controller
 public class ContentController {
 
+	
 	@Autowired
 	private ContentService contentService;
 	/**
@@ -41,6 +44,21 @@ public class ContentController {
 	@ResponseBody
 	public E3Result createCatagory(Long parentId,String name){
 		E3Result e3Result = contentService.createCatagory(parentId,name);
+		return e3Result;
+	}
+	
+	/**
+	 * 
+	 * @author 阿荣
+	 * @Description:保存内容
+	 * @date: 2018年8月19日 下午1:26:43
+	 * @param tbContent
+	 * @return
+	 */
+	@RequestMapping(value="/content/save")
+	@ResponseBody
+	public E3Result saveContent(TbContent tbContent){
+		E3Result e3Result = contentService.saveContent(tbContent);
 		return e3Result;
 	}
 }

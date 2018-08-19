@@ -10989,3 +10989,12 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2018-08-19 11:06:42.876
 !MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jdt.core 4 969 2018-08-19 12:56:14.897
+!MESSAGE contentService [in ContentController [in [Working copy] ContentController.java [in com.iteason.controller [in src/main/java [in e3-manager-web]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2018-08-19 12:56:18.483
+!MESSAGE contentService [in ContentController [in [Working copy] ContentController.java [in com.iteason.controller [in src/main/java [in e3-manager-web]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2018-08-19 13:26:34.185
+!MESSAGE saveContent() [in ContentController [in [Working copy] ContentController.java [in com.iteason.controller [in src/main/java [in e3-manager-web]]]]] does not exist
