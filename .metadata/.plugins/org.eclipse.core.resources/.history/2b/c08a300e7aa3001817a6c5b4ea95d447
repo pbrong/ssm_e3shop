@@ -88,13 +88,13 @@ public class ContentServiceImp implements ContentService {
 	}
 
 	@Override
-	public List<TbContent> findContent(Long CATAGORY_LUNBO_ID) {
+	public TbContent findContent(Long CATAGORY_LUNBO_ID) {
 		TbContentExample example = new TbContentExample();
 		com.iteason.pojo.TbContentExample.Criteria criteria = example.createCriteria();
 		//设置条件
 		criteria.andCategoryIdEqualTo(CATAGORY_LUNBO_ID);
-		List<TbContent> list = tbContentMapper.selectByExample(example);
-		return list;
+		tbContentMapper.selectByExample(example );
+		return null;
 	}
 
 }

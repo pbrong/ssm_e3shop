@@ -15,7 +15,6 @@ import com.iteason.pojo.TbContent;
 import com.iteason.pojo.TbContentCategory;
 import com.iteason.pojo.TbContentCategoryExample;
 import com.iteason.pojo.TbContentCategoryExample.Criteria;
-import com.iteason.pojo.TbContentExample;
 import com.iteason.utils.E3Result;
 @Service
 public class ContentServiceImp implements ContentService {
@@ -88,13 +87,9 @@ public class ContentServiceImp implements ContentService {
 	}
 
 	@Override
-	public List<TbContent> findContent(Long CATAGORY_LUNBO_ID) {
-		TbContentExample example = new TbContentExample();
-		com.iteason.pojo.TbContentExample.Criteria criteria = example.createCriteria();
-		//设置条件
-		criteria.andCategoryIdEqualTo(CATAGORY_LUNBO_ID);
-		List<TbContent> list = tbContentMapper.selectByExample(example);
-		return list;
+	public TbContent findContent(Long CATAGORY_LUNBO_ID) {
+		 
+		return null;
 	}
 
 }

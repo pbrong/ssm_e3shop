@@ -88,7 +88,7 @@ public class ContentServiceImp implements ContentService {
 	}
 
 	@Override
-	public List<TbContent> findContent(Long CATAGORY_LUNBO_ID) {
+	public TbContent findContent(Long CATAGORY_LUNBO_ID) {
 		TbContentExample example = new TbContentExample();
 		com.iteason.pojo.TbContentExample.Criteria criteria = example.createCriteria();
 		//设置条件

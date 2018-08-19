@@ -33,8 +33,8 @@ public class indexController {
 	 */
 	@RequestMapping(value="/index")
 	public String toIndex(Model model){
-		List<TbContent> ad1List = contentService.findContent(CATAGORY_LUNBO_ID);
-		model.addAttribute("ad1List", ad1List);
+		List<TbContent> tbContent = contentService.findContent(CATAGORY_LUNBO_ID);
+		model.addAttribute("tbContent", tbContent);
 		return "index";
 	}
 	

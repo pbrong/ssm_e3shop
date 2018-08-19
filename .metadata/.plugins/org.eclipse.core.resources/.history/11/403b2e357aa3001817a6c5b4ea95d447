@@ -1,7 +1,5 @@
 package com.iteason.show.controller;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -33,8 +31,8 @@ public class indexController {
 	 */
 	@RequestMapping(value="/index")
 	public String toIndex(Model model){
-		List<TbContent> ad1List = contentService.findContent(CATAGORY_LUNBO_ID);
-		model.addAttribute("ad1List", ad1List);
+		TbContent tbContent = contentService.findContent(CATAGORY_LUNBO_ID);
+		model.addAttribute("tbContent", tbContent);
 		return "index";
 	}
 	

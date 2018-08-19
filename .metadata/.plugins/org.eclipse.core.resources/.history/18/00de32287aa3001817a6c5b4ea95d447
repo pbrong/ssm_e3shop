@@ -14,6 +14,6 @@ public interface ContentService {
 
 	E3Result saveContent(TbContent tbContent);
 
-	List<TbContent> findContent(Long cATAGORY_LUNBO_ID);
+	TbContent findContent(Long cATAGORY_LUNBO_ID);
 
 }
