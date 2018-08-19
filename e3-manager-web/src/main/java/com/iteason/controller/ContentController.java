@@ -16,7 +16,9 @@ import com.iteason.utils.E3Result;
 
 @Controller
 public class ContentController {
-
+	//图片地址前缀
+	@Value("${IMAGE_ADDR}")
+	private String IMAGE_ADDR;
 	
 	@Autowired
 	private ContentService contentService;
@@ -58,6 +60,9 @@ public class ContentController {
 	@RequestMapping(value="/content/save")
 	@ResponseBody
 	public E3Result saveContent(TbContent tbContent){
+		//单图片上传地址缺少前缀（待解决）
+		tbContent.setPic(IMAGE_ADDR+tbContent.getPic());
+		
 		E3Result e3Result = contentService.saveContent(tbContent);
 		return e3Result;
 	}
