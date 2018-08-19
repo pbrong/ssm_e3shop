@@ -1,26 +1,16 @@
 package com.iteason.show.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import com.iteason.intef.ContentService;
-import com.iteason.pojo.TbContent;
 
 @Controller
 public class indexController {
 
 	
 	@Value("${CATAGORY_LUNBO_ID}")
-	private Long CATAGORY_LUNBO_ID;
-	
-	
-	
-	@Autowired
-	private ContentService contentService;
-	
+	private String CATAGORY_LUNBO_ID;
 	
 	/**|
 	 * 
@@ -31,8 +21,9 @@ public class indexController {
 	 */
 	@RequestMapping(value="/index")
 	public String toIndex(Model model){
-		TbContent tbContent = contentService.findContent(CATAGORY_LUNBO_ID);
-		model.addAttribute("tbContent", tbContent);
+		
+		
+		
 		return "index";
 	}
 	

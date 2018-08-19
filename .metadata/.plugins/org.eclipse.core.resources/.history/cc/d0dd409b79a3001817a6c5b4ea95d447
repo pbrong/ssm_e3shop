@@ -7,7 +7,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.iteason.intef.ContentService;
-import com.iteason.pojo.TbContent;
 
 @Controller
 public class indexController {
@@ -31,8 +30,9 @@ public class indexController {
 	 */
 	@RequestMapping(value="/index")
 	public String toIndex(Model model){
-		TbContent tbContent = contentService.findContent(CATAGORY_LUNBO_ID);
-		model.addAttribute("tbContent", tbContent);
+		contentService.findContent();
+		
+		
 		return "index";
 	}
 	
