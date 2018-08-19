@@ -49,13 +49,23 @@ public class ContentServiceImp implements ContentService {
 	@Override
 	public E3Result createCatagory(Long parentId, String name) {
 		TbContentCategory newCatagory = new TbContentCategory();
-		//补全属性(id由mybatis生成)
+		//补全新目录的属性(id由mybatis生成)
 		newCatagory.setParentId(parentId); 
 		newCatagory.setCreated(new Date());
 		newCatagory.setIsParent(false);
 		newCatagory.setName(name);
 		newCatagory.setStatus(1);
 		newCatagory.setUpdated(new Date());
+		//修改父目录的state为closed
+		TbContentCategory parentCatagory = new TbContentCategory();
+		parentCatagory.setIsParent(true);//是父节点
+		TbContentCategoryExample example = new TbContentCategoryExample();
+		Criteria criteria = example.createCriteria();
+		//锁定id
+		criteria.andIdEqualTo(parentId);
+		//执行更新操作，更新该节点为父节点
+		tbContentCategoryMapper.updateByExampleSelective(parentCatagory, example);
+		//执行插入新目录操作
 		tbContentCategoryMapper.insertSelective(newCatagory);
 		return E3Result.ok();
 	}
