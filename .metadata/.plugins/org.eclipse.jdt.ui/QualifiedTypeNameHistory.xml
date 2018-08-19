@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="com.iteason.pojo.TbContentCategory"/>
 <fullyQualifiedTypeName name="com.iteason.pojo.TbContentCategoryExample"/>
-<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
 <fullyQualifiedTypeName name="com.iteason.service.TestService"/>
 <fullyQualifiedTypeName name="com.iteason.intef.TestService"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
@@ -39,18 +38,22 @@
 <fullyQualifiedTypeName name="com.iteason.mapper.TbItemDescMapper"/>
 <fullyQualifiedTypeName name="com.iteason.pojo.TbItem"/>
 <fullyQualifiedTypeName name="com.iteason.pojo.TbItemDesc"/>
-<fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
 <fullyQualifiedTypeName name="com.iteason.pojo.EsayUIZtreeNode"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="com.iteason.intef.ContentService"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 <fullyQualifiedTypeName name="com.iteason.mapper.TbContentCategoryMapper"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.iteason.mapper.TbContentMapper"/>
 <fullyQualifiedTypeName name="com.iteason.utils.E3Result"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.iteason.intef.ContentService"/>
+<fullyQualifiedTypeName name="com.iteason.pojo.TbContent"/>
 </qualifiedTypeNameHistroy>
