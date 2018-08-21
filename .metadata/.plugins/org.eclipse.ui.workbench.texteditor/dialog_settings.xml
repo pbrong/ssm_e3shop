@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="alert" key="selection"/>
+		<item value="cid" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="CID"/>
+			<item value="value"/>
+			<item value="va"/>
 			<item value="alert"/>
 			<item value="picFileUpload"/>
 			<item value="PicUpload"/>
 			<item value="onePicUpload"/>
 			<item value="contentAddForm"/>
-			<item value="kingEditorParams"/>
-			<item value="pic"/>
-			<item value="insert"/>
 		</list>
 		<list key="replacehistory">
 			<item value="/"/>

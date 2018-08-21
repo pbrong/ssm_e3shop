@@ -94,23 +94,29 @@ public class ContentServiceImp implements ContentService {
 		return E3Result.ok();
 	}
 	//缓存的key值
-	private String CONTENT_LUNBO;
+	private String CONTENT_LUNBO = "CONTENT_LUNBO";
 	
 	/**
 	 * 查询内容
 	 */
 	@Override
 	public List<TbContent> findContent(Long CATAGORY_LUNBO_ID) {
-		//判断是否有缓存数据
+		String cid = CATAGORY_LUNBO_ID.toString();
+		
 		//查询到缓存
-		String content_lunbo_string = jedisClient.hget(CONTENT_LUNBO, CATAGORY_LUNBO_ID.toString());
-		 	if(StringUtils.isNotBlank(content_lunbo_string)){
+		try {
+			String content_lunbo_string = jedisClient.hget(CONTENT_LUNBO,cid);
+			if(StringUtils.isNotBlank(content_lunbo_string)){
 		 		//缓存存在
 		 		//转化为相应的list
 				List<TbContent> contentList = JsonUtils.jsonToList(content_lunbo_string, TbContent.class);
 				return contentList;
 		 	}
-			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		 	
 			//查询不到该缓存，查询数据库
 			TbContentExample example = new TbContentExample();
 			com.iteason.pojo.TbContentExample.Criteria criteria = example.createCriteria();
@@ -122,7 +128,12 @@ public class ContentServiceImp implements ContentService {
 			//添加list转化为json到缓存中
 			String contentJson = JsonUtils.objectToJson(contentList);
 			//添加hash缓存格式为：key filed value
-			jedisClient.hset(CONTENT_LUNBO, CATAGORY_LUNBO_ID.toString(), contentJson);
+			try {
+				jedisClient.hset(CONTENT_LUNBO,cid, contentJson);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			
 		 
 			return contentList;
 	
