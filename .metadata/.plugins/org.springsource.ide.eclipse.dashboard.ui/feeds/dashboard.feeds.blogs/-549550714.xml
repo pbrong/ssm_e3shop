@@ -5,7 +5,150 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2018-08-17T13:47:29Z</updated>
+  <updated>2018-08-20T16:07:00Z</updated>
+  <entry>
+    <title>Spring Data Lovelace RC2 available</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/08/20/spring-data-lovelace-rc2-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Oliver Gierke</name>
+    </author>
+    <id>tag:spring.io,2018-08-20:3372</id>
+    <updated>2018-08-20T16:07:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the Spring Data team, I&amp;rsquo;d like to announce the availability of the Lovelace RC2 release. This ships in preparation of Spring Boot 2.1 M2 and, of course, our own GA release mid-September. The release ships with &lt;a href="https://jira.spring.io/issues/?filter=16148"&gt;82 tickets fixed&lt;/a&gt;. You can find more details in the the updated and curated &lt;a href="https://github.com/spring-projects/spring-data-commons/wiki/Release-Train-Lovelace"&gt;release wiki&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A pretty late but significant new feature has made it into the release: deferred repository initialization for Spring Data JPA. The feature allows your startup to use Spring Framework&amp;rsquo;s &lt;a href="https://jira.spring.io/browse/SPR-13732"&gt;JPA background initialization option&lt;/a&gt; more effectively and can significantly cut down startup time. See the &lt;a href="https://github.com/spring-projects/spring-data-examples/tree/master/jpa/deferred"&gt;previewing example&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;As we&amp;rsquo;re getting close to the GA release, this is the perfect time to give the release candidates a run by temporarily upgrading your Spring Boot 2.0 application to Lovelace. The easiest way to do so is by setting the &lt;code&gt;spring-data-releasetrain.version&lt;/code&gt; property to &lt;code&gt;Lovelace-RC2&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Also, make sure you register for this year&amp;rsquo;s &lt;a href="https://springoneplatform.io/"&gt;SpringOne Platform&lt;/a&gt; (Sept. 24th-27th, Washington, D.C.) to learn about the latest additions in Spring Data and even get a preview of the features planned for the next release train. The entire team will be on site and happy to answer questions and take feedback.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Data Commons 2.1 RC2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-commons/2.1.0.RC2"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/2.1.0.RC2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/2.1.0.RC2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/2.1.0.RC2/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data JPA 2.1 RC2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-jpa/2.1.0.RC2"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/2.1.0.RC2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/2.1.0.RC2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/2.1.0.RC2/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data KeyValue 2.1 RC2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-keyvalue/2.1.0.RC2"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/keyvalue/docs/2.1.0.RC2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/keyvalue/docs/2.1.0.RC2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/keyvalue/docs/2.1.0.RC2/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Gemfire 2.1 RC2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-gemfire/2.1.0.RC2"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/2.1.0.RC2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/2.1.0.RC2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/2.1.0.RC2/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data MongoDB 2.1 RC2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-mongodb/2.1.0.RC2"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/2.1.0.RC2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/2.1.0.RC2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/2.1.0.RC2/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Neo4j 5.1 RC2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-neo4j/5.1.0.RC2"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/5.1.0.RC2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/5.1.0.RC2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/5.1.0.RC2/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data for Apache Cassandra 2.1 RC2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-cassandra/2.1.0.RC2"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/2.1.0.RC2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/2.1.0.RC2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/2.1.0.RC2/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data for Apache Solr 4.0 RC2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-solr/4.0.0.RC2"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/4.0.0.RC2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/4.0.0.RC2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/4.0.0.RC2/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data for Apache Geode 2.1 RC2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-geode/2.1.0.RC2"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/geode/docs/2.1.0.RC2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/geode/docs/2.1.0.RC2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/geode/docs/2.1.0.RC2/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data LDAP 2.1 RC2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-ldap/2.1.0.RC2"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/ldap/docs/2.1.0.RC2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/ldap/docs/2.1.0.RC2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/ldap/docs/2.1.0.RC2/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Envers 2.1 RC2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-envers/2.1.0.RC2"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/envers/docs/2.1.0.RC2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/envers/docs/2.1.0.RC2/reference/html"&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data REST 3.1 RC2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-rest-webmvc/3.1.0.RC2"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/3.1.0.RC2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/3.1.0.RC2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/3.1.0.RC2/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Redis 2.1 RC2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-redis/2.1.0.RC2"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/2.1.0.RC2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/2.1.0.RC2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/2.1.0.RC2/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Elasticsearch 3.1 RC2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-elasticsearch/3.1.0.RC2"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/3.1.0.RC2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/3.1.0.RC2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/3.1.0.RC2/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Couchbase 3.1 RC2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-couchbase/3.1.0.RC2"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/3.1.0.RC2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/3.1.0.RC2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/3.1.0.RC2/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data JDBC 1.0 RC2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-jdbc/1.0.0.RC2"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jdbc/docs/1.0.0.RC2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jdbc/docs/1.0.0.RC2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jdbc/docs/1.0.0.RC2/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>Bootiful GCP: Getting Started with Spring Cloud for Google Cloud Platform (1/8)</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/08/20/bootiful-gcp-getting-started-with-spring-cloud-for-google-cloud-platform-1-8" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2018-08-17:3362</id>
+    <updated>2018-08-20T00:00:00Z</updated>
+    <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;Hi Spring fans! In this brief 8 part series we¡¯re going to look at the Spring Cloud integration for Google Cloud Platform, called Spring Cloud GCP. &lt;a href="https://cloud.spring.io/spring-cloud-gcp/"&gt;Spring Cloud GCP&lt;/a&gt; represents a joint effort between Google and Pivotal that endeavors to provide a first class experience for Spring Cloud developers when using the Google Cloud Platform. Pivotal Cloud Foundry users will enjoy an even &lt;a href="https://docs.pivotal.io/partners/gcp-sb/index.html"&gt;easier integration with the GCP service broker&lt;/a&gt;. I wrote these installments with input from Google Cloud Developer Advocate, and my buddy, &lt;a href="http://twitter.com/saturnism"&gt;Ray Tsang&lt;/a&gt;. You can also catch a walkthrough of Spring Cloud GCP in our Google Next 2018 session, &lt;a href="https://www.youtube.com/watch?v=2Jo3vy7iQf8"&gt;Bootiful Google Cloud Platform&lt;/a&gt;. Thanks buddy! As always, &lt;a href="http://twitter.com/starbuxman"&gt;I&amp;rsquo;d love to hear from you if you have feedback&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In this installment we¡¯re going to introduce Spring Cloud GCP and then setup a trivial project using Spring Cloud GCP.&lt;/p&gt;
+&lt;p&gt;The Google Cloud Platform is &lt;a href="https://cloud.google.com/products/"&gt;&lt;em&gt;vast&lt;/em&gt;&lt;/a&gt;! It has a ton of features. But so do the other platforms. So, why Google Cloud Platform? I¡¯d say there are two big reasons to use GCP. First, Google¡¯s datacenters are undoubtedly the world¡¯s most sophisticated, and their operations acumen second to none. Let Google operate and secure your datacenter. Beyond that, Google have had to solve some amazing problems at their scale, through GCP, we can benefit from those developments on GCP. The data services, those unique to Google, are legendary. &lt;a href="https://opensource.google.com/projects/tensorflow"&gt;Google¡¯s Tensorflow&lt;/a&gt;, for example, represents the cutting edge in machine learning, and GCP even features access to specialized An Application-Specific Integrated Circuit (ASICs) &lt;em&gt;tensor processing units&lt;/em&gt; (TPUs) that are optimized for running TensorFlow workfloads. &lt;a href="https://cloud.google.com/spanner/"&gt;Google¡¯s Spanner&lt;/a&gt; is the only enterprise-grade, globally-distributed, and strongly consistent database service built for the cloud specifically to combine the benefits of relational database structure with non-relational horizontal scale.&lt;/p&gt;&lt;h2&gt;&lt;a href="#authentication" class="anchor" name="authentication"&gt;&lt;/a&gt;Authentication&lt;/h2&gt;
+&lt;p&gt;You¡¯ll need to sign up for &lt;a href="https://console.cloud.google.com/"&gt;a GCP account&lt;/a&gt;. In order to use the Spring Cloud GCP project on your local machine, you¡¯ll want to &lt;a href="https://cloud.google.com/pubsub/docs/quickstart-cli"&gt;setup a project on GCP and have the &lt;code&gt;gcloud&lt;/code&gt; CLI installed&lt;/a&gt; locally.&lt;/p&gt;
+&lt;p&gt;There are a few things to know and do before starting any work with GCP. First, you¡¯ll need to login. Run the following command to login to GCP:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint shell"&gt;gcloud auth application-default login
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will make it easy to provide default credentials supporting work your interactions with the platform. In this case, you¡¯re saying that you want to allow certain operations on &lt;em&gt;your&lt;/em&gt; behalf.&lt;/p&gt;
+&lt;p&gt;Some operations endure independent of a particular user. They might need granular permissions that represent a subset of your privilege. They might be run independent of a given user, as in a batch job or something that runs nightly. In this case, it makes sense to use a &lt;em&gt;service account&lt;/em&gt;. We¡¯ll need to configure a &lt;em&gt;service account&lt;/em&gt; later when we look at tracing.&lt;/p&gt;
+&lt;p&gt;It¡¯s useful to know your &lt;em&gt;Project ID&lt;/em&gt;. You¡¯ll find a lot of incantations need to know this value. I have a little script like this that is run in my &lt;code&gt;~/.bashrc&lt;/code&gt; and is contributed to every shell.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint shell"&gt;export PROJECT_ID=$(gcloud config list --format &amp;#39;value(core.project)&amp;#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I tend to stick to the CLI in these examples, but most everything you want to do can be done from the web console, too.&lt;/p&gt;&lt;h2&gt;&lt;a href="#getting-started-with-spring-cloud-gcp" class="anchor" name="getting-started-with-spring-cloud-gcp"&gt;&lt;/a&gt;Getting Started with Spring Cloud GCP&lt;/h2&gt;
+&lt;p&gt;You¡¯ll need, at least for now, the Spring Cloud &lt;em&gt;and&lt;/em&gt; Spring Cloud GCP bill of materials (BOM) artifacts. The easiest way to get a new Spring Cloud GCP project going is to generate a new project from the &lt;a href="http://start.spring.io"&gt;Spring Initializr&lt;/a&gt; and choose &lt;code&gt;GCP Support&lt;/code&gt;. Here¡¯s what a minimal &lt;code&gt;pom.xml&lt;/code&gt; artifact looks like.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A basic &lt;code&gt;pom.xml&lt;/code&gt; for Spring Cloud GCP.&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;&#xD;
+&amp;lt;project xmlns=&amp;quot;http://maven.apache.org/POM/4.0.0&amp;quot; xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;&#xD;
+    xsi:schemaLocation=&amp;quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&amp;quot;&amp;gt;&#xD;
+    &amp;lt;modelVersion&amp;gt;4.0.0&amp;lt;/modelVersion&amp;gt;&#xD;
+&#xD;
+    &amp;lt;groupId&amp;gt;com.example&amp;lt;/groupId&amp;gt;&#xD;
+    &amp;lt;artifactId&amp;gt;demo&amp;lt;/artifactId&amp;gt;&#xD;
+    &amp;lt;version&amp;gt;0.0.1-SNAPSHOT&amp;lt;/version&amp;gt;&#xD;
+    &amp;lt;packaging&amp;gt;jar&amp;lt;/packaging&amp;gt;&#xD;
+&#xD;
+    &amp;lt;name&amp;gt;demo&amp;lt;/name&amp;gt;&#xD;
+    &amp;lt;description&amp;gt;Demo project for Spring Boot&amp;lt;/description&amp;gt;&#xD;
+&#xD;
+    &amp;lt;parent&amp;gt;&#xD;
+        &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;&#xD;
+        &amp;lt;artifactId&amp;gt;spring-boot-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
+        &amp;lt;version&amp;gt;2.0.4.RELEASE&amp;lt;/version&amp;gt;&#xD;
+        &amp;lt;relativePath/&amp;gt; &amp;lt;!-- lookup parent from repository --&amp;gt;&#xD;
+    &amp;lt;/parent&amp;gt;&#xD;
+&#xD;
+    &amp;lt;properties&amp;gt;&#xD;
+        &amp;lt;project.build.sourceEncoding&amp;gt;UTF-8&amp;lt;/project.build.sourceEncoding&amp;gt;&#xD;
+        &amp;lt;project.reporting.outputEncoding&amp;gt;UTF-8&amp;lt;/project.reporting.outputEncoding&amp;gt;&#xD;
+        &amp;lt;java.version&amp;gt;1.8&amp;lt;/java.version&amp;gt;&#xD;
+        &amp;lt;spring-cloud-gcp.version&amp;gt;1.0.0.RELEASE&amp;lt;/spring-cloud-gcp.version&amp;gt;&#xD;
+        &amp;lt;spring-cloud.version&amp;gt;Finchley.SR1&amp;lt;/spring-cloud.version&amp;gt;&#xD;
+    &amp;lt;/properties&amp;gt;&#xD;
+&#xD;
+    &amp;lt;dependencies&amp;gt;&#xD;
+        &amp;lt;dependency&amp;gt;&#xD;
+            &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+            &amp;lt;artifactId&amp;gt;spring-cloud-gcp-starter&amp;lt;/artifactId&amp;gt;&#xD;
+        &amp;lt;/dependency&amp;gt;&#xD;
+&#xD;
+        &amp;lt;dependency&amp;gt;&#xD;
+            &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;&#xD;
+            &amp;lt;artifactId&amp;gt;spring-boot-starter-test&amp;lt;/artifactId&amp;gt;&#xD;
+            &amp;lt;scope&amp;gt;test&amp;lt;/scope&amp;gt;&#xD;
+        &amp;lt;/dependency&amp;gt;&#xD;
+    &amp;lt;/dependencies&amp;gt;&#xD;
+&#xD;
+    &amp;lt;dependencyManagement&amp;gt;&#xD;
+        &amp;lt;dependencies&amp;gt;&#xD;
+            &amp;lt;dependency&amp;gt;&#xD;
+                &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+                &amp;lt;artifactId&amp;gt;spring-cloud-dependencies&amp;lt;/artifactId&amp;gt;&#xD;
+                &amp;lt;version&amp;gt;${spring-cloud.version}&amp;lt;/version&amp;gt;&#xD;
+                &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
+                &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
+            &amp;lt;/dependency&amp;gt;&#xD;
+            &amp;lt;dependency&amp;gt;&#xD;
+                &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+                &amp;lt;artifactId&amp;gt;spring-cloud-gcp-dependencies&amp;lt;/artifactId&amp;gt;&#xD;
+                &amp;lt;version&amp;gt;${spring-cloud-gcp.version}&amp;lt;/version&amp;gt;&#xD;
+                &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
+                &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
+            &amp;lt;/dependency&amp;gt;&#xD;
+        &amp;lt;/dependencies&amp;gt;&#xD;
+    &amp;lt;/dependencyManagement&amp;gt;&#xD;
+&#xD;
+    &amp;lt;build&amp;gt;&#xD;
+        &amp;lt;plugins&amp;gt;&#xD;
+            &amp;lt;plugin&amp;gt;&#xD;
+                &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;&#xD;
+                &amp;lt;artifactId&amp;gt;spring-boot-maven-plugin&amp;lt;/artifactId&amp;gt;&#xD;
+            &amp;lt;/plugin&amp;gt;&#xD;
+        &amp;lt;/plugins&amp;gt;&#xD;
+    &amp;lt;/build&amp;gt;&#xD;
+&#xD;
+    &amp;lt;repositories&amp;gt;&#xD;
+        &amp;lt;repository&amp;gt;&#xD;
+            &amp;lt;id&amp;gt;spring-milestones&amp;lt;/id&amp;gt;&#xD;
+            &amp;lt;name&amp;gt;Spring Milestones&amp;lt;/name&amp;gt;&#xD;
+            &amp;lt;url&amp;gt;https://repo.spring.io/milestone&amp;lt;/url&amp;gt;&#xD;
+            &amp;lt;snapshots&amp;gt;&#xD;
+                &amp;lt;enabled&amp;gt;false&amp;lt;/enabled&amp;gt;&#xD;
+            &amp;lt;/snapshots&amp;gt;&#xD;
+        &amp;lt;/repository&amp;gt;&#xD;
+    &amp;lt;/repositories&amp;gt;&#xD;
+&#xD;
+&#xD;
+&amp;lt;/project&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In this installment we&amp;rsquo;ve looked at how to setup a basic Spring Cloud GCP project. In the next installment, this Thursday, we&amp;rsquo;ll look at using Spring Cloud CCP to talk to a SQL database like MySQL or PostgreSQL.&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Spring Session Bean-M1 and Apple-SR4 Released</title>
     <link rel="alternate" href="https://spring.io/blog/2018/08/17/spring-session-bean-m1-and-apple-sr4-released" />
@@ -1197,35 +1340,5 @@ When one consumer goes (yields leadership), some other consumer may acquire a lo
 &lt;p&gt;For a complete list of changes and upgrade instructions, please see the &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.1-Release-Notes"&gt;Spring Boot 2.1 Release Notes&lt;/a&gt; on the wiki and the &lt;a href="http://docs.spring.io/spring-boot/docs/2.1.0.M1/reference/htmlsingle/"&gt;updated reference documentation&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If you want to get started with 2.1 and try out the new features, you can bootstrap a new project on &lt;a href="https://start.spring.io"&gt;https://start.spring.io&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.1.0.M1/reference/htmlsingle"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 2.0.4 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/07/30/spring-boot-2-0-4-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>St¨¦phane Nicoll</name>
-    </author>
-    <id>tag:spring.io,2018-07-30:3346</id>
-    <updated>2018-07-30T17:21:29Z</updated>
-    <content type="html">&lt;p&gt;It is my pleasure to announce that Spring Boot 2.0.4 has been released and is is now available from &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.springframework.boot%22"&gt;Maven Central&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Spring Boot 2.0.4 includes &lt;a href="https://github.com/spring-projects/spring-boot/milestone/113?closed=1"&gt;90 fixes, improvements and dependency updates&lt;/a&gt;. Thanks to all that have contributed with issue reports and pull requests.&lt;/p&gt;
-&lt;p&gt;If you haven¡¯t already upgraded to Spring Boot 2, now is a great time to do so as the end of life announcement for 1.x¡¯s &lt;a href="https://spring.io/blog/2018/07/30/spring-boot-1-x-eol-aug-1st-2019"&gt;has just been made&lt;/a&gt;. &lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="http://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="http://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.0.4.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 1.5.15 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/07/30/spring-boot-1-5-15-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>St¨¦phane Nicoll</name>
-    </author>
-    <id>tag:spring.io,2018-07-30:3345</id>
-    <updated>2018-07-30T15:20:00Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team, I am pleased to announce that Spring Boot 1.5.15 has been released and is is now available from &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.springframework.boot%22"&gt;Maven Central&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Spring Boot 1.5.15 includes &lt;a href="https://github.com/spring-projects/spring-boot/milestone/114?closed=1"&gt;35 fixes, improvements and dependency updates&lt;/a&gt;. Thanks to all that have contributed with issue reports and pull requests.&lt;/p&gt;
-&lt;p&gt;If you haven¡¯t already upgraded to Spring Boot 2, now is a great time to do so as the end of life announcement for 1.x¡¯s &lt;a href="https://spring.io/blog/2018/07/30/spring-boot-1-x-eol-aug-1st-2019"&gt;has just been made&lt;/a&gt;. &lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="http://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="http://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/1.5.15.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
