@@ -82,9 +82,8 @@ public class JedisClientPool implements JedisClient {
 
 	@Override
 	public Long del(String key) {
-		Jedis jedis = jedisPool.getResource();
-		Long result = jedis.del(key);
-		return result;
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
