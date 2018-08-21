@@ -8,6 +8,14 @@ public class JedisClientPool implements JedisClient {
 	
 	private JedisPool jedisPool;
 
+	public JedisPool getJedisPool() {
+		return jedisPool;
+	}
+
+	public void setJedisPool(JedisPool jedisPool) {
+		this.jedisPool = jedisPool;
+	}
+
 	@Override
 	public String set(String key, String value) {
 		Jedis jedis = jedisPool.getResource();
@@ -84,6 +92,7 @@ public class JedisClientPool implements JedisClient {
 	public Long del(String key) {
 		Jedis jedis = jedisPool.getResource();
 		Long result = jedis.del(key);
+		jedis.close();
 		return result;
 	}
 

@@ -3,6 +3,8 @@ package com.iteason.jedis;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
@@ -35,5 +37,13 @@ public class JedisTest {
 		//一定要关闭资源
 		jedis.close();
 		pool.close();
+	}
+	
+	@Test
+	public void testJedisClient() throws Exception {
+		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext-redis.xml");
+		JedisClient jedisClient = applicationContext.getBean(JedisClient.class);
+		jedisClient.set("jedisClient", "helloworld");
+		System.out.println(jedisClient.get("jedisClient"));
 	}
 }

@@ -59,6 +59,13 @@
 			<artifactId>fastdfs_client</artifactId>
 			<version>1.25</version>
 		</dependency>
+		
+		<!-- jedis -->
+		<dependency>
+		    <groupId>redis.clients</groupId>
+		    <artifactId>jedis</artifactId>
+		    <version>2.9.0</version>
+		</dependency>
   </dependencies>
   
 </project>

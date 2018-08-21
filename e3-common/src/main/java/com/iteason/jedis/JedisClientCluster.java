@@ -49,4 +49,10 @@ public class JedisClientCluster implements JedisClient {
 		return jedisCluster.hdel(key, field);
 	}
 
+	@Override
+	public Long del(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
