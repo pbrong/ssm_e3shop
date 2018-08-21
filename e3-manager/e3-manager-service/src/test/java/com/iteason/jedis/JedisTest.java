@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPool;
 
 public class JedisTest {
 
@@ -20,5 +21,19 @@ public class JedisTest {
 		System.out.println(string);
 		//关流
 		jedis.close();
+	}
+	
+	@Test
+	public void testJedisPool() throws Exception {
+		//创建一个jedis连接池
+		JedisPool pool = new JedisPool("47.106.133.57",6379);
+		//通过连接池获取jedis
+		Jedis jedis = pool.getResource();
+		//通过jedis操作redis
+		jedis.set("redispool","helloredispool");
+		System.out.println(jedis.get("redispool"));
+		//一定要关闭资源
+		jedis.close();
+		pool.close();
 	}
 }
