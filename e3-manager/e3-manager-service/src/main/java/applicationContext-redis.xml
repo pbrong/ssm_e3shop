@@ -10,7 +10,7 @@
 
 
 	<!-- 配置JedisClientPool -->
-	<bean class="com.iteason.jedis.JedisClientPool" id="jedisClient">
+	<bean class="com.iteason.jedis.JedisClientPool" id="jedisClientPool">
 		<property name="jedisPool" ref="jedisPool"/>
 	</bean>
 	

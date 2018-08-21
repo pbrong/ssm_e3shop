@@ -4,10 +4,13 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import com.iteason.intef.ContentService;
+import com.iteason.jedis.JedisClient;
 import com.iteason.mapper.TbContentCategoryMapper;
 import com.iteason.mapper.TbContentMapper;
 import com.iteason.pojo.EsayUIZtreeNode;
@@ -17,9 +20,13 @@ import com.iteason.pojo.TbContentCategoryExample;
 import com.iteason.pojo.TbContentCategoryExample.Criteria;
 import com.iteason.pojo.TbContentExample;
 import com.iteason.utils.E3Result;
+import com.iteason.utils.JsonUtils;
 @Service
 public class ContentServiceImp implements ContentService {
 
+	@Autowired
+	private JedisClient jedisClient;
+	
 	@Autowired
 	private TbContentCategoryMapper tbContentCategoryMapper;
 	
@@ -86,15 +93,40 @@ public class ContentServiceImp implements ContentService {
 		tbContentMapper.insert(tbContent);
 		return E3Result.ok();
 	}
-
+	//缓存的key值
+	private String CONTENT_LUNBO;
+	
+	/**
+	 * 查询内容
+	 */
 	@Override
 	public List<TbContent> findContent(Long CATAGORY_LUNBO_ID) {
-		TbContentExample example = new TbContentExample();
-		com.iteason.pojo.TbContentExample.Criteria criteria = example.createCriteria();
-		//设置条件
-		criteria.andCategoryIdEqualTo(CATAGORY_LUNBO_ID);
-		List<TbContent> list = tbContentMapper.selectByExample(example);
-		return list;
+		//判断是否有缓存数据
+		//查询到缓存
+		String content_lunbo_string = jedisClient.hget(CONTENT_LUNBO, CATAGORY_LUNBO_ID.toString());
+		 	if(StringUtils.isNotBlank(content_lunbo_string)){
+		 		//缓存存在
+		 		//转化为相应的list
+				List<TbContent> contentList = JsonUtils.jsonToList(content_lunbo_string, TbContent.class);
+				return contentList;
+		 	}
+			
+			//查询不到该缓存，查询数据库
+			TbContentExample example = new TbContentExample();
+			com.iteason.pojo.TbContentExample.Criteria criteria = example.createCriteria();
+			//设置条件
+			criteria.andCategoryIdEqualTo(CATAGORY_LUNBO_ID);
+			List<TbContent> contentList = tbContentMapper.selectByExample(example);
+			
+			
+			//添加list转化为json到缓存中
+			String contentJson = JsonUtils.objectToJson(contentList);
+			//添加hash缓存格式为：key filed value
+			jedisClient.hset(CONTENT_LUNBO, CATAGORY_LUNBO_ID.toString(), contentJson);
+		 
+			return contentList;
+	
+		
 	}
 
 }

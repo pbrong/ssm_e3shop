@@ -5,7 +5,30 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2018-08-20T16:07:00Z</updated>
+  <updated>2018-08-21T11:14:42Z</updated>
+  <entry>
+    <title>Spring Boot 2.1 M2 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/08/21/spring-boot-2-1-m2-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>St¨¦phane Nicoll</name>
+    </author>
+    <id>tag:spring.io,2018-08-20:3371</id>
+    <updated>2018-08-21T11:14:42Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone that contributed, I am pleased to announce that the second milestone of Spring Boot 2.1 has been released and is available from &lt;a href="http://repo.spring.io/milestone/"&gt;our milestone repository&lt;/a&gt;. This release closes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.1.0.M2"&gt;75 issues and pull requests&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;This second milestone aligns with &lt;a href="https://spring.io/blog/2018/08/17/spring-framework-5-1-rc2-available-now"&gt;Spring Framework 5.1.RC2&lt;/a&gt; and is the first release with support of Java 11.&lt;/p&gt;
+&lt;p&gt;Other highlights of this second milestone include:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Auto-configuration for task execution (&lt;code&gt;@EnableAsync&lt;/code&gt;) and task scheduling (&lt;code&gt;@EnableScheduling&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;Configurable bootstrap mode for JPA&lt;/li&gt;
+  &lt;li&gt;OAuth2 resource server support&lt;/li&gt;
+  &lt;li&gt;Improved logging output for web applications&lt;/li&gt;
+  &lt;li&gt;Improved binding for data size properties.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For a complete list of changes and upgrade instructions, please see the &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.1.0-M2-Release-Notes"&gt;Spring Boot 2.1 Release Notes&lt;/a&gt; on the wiki and the &lt;a href="http://docs.spring.io/spring-boot/docs/2.1.0.M2/reference/htmlsingle/"&gt;updated reference documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you want to get started with 2.1 and try out the new features, you can bootstrap a new project on &lt;a href="https://start.spring.io"&gt;https://start.spring.io&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.1.0.M2/reference/htmlsingle"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Spring Data Lovelace RC2 available</title>
     <link rel="alternate" href="https://spring.io/blog/2018/08/20/spring-data-lovelace-rc2-available" />
@@ -1318,27 +1341,5 @@ When one consumer goes (yields leadership), some other consumer may acquire a lo
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 2.1 M1</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/07/30/spring-boot-2-1-m1" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Andy Wilkinson</name>
-    </author>
-    <id>tag:spring.io,2018-07-30:3347</id>
-    <updated>2018-07-30T17:46:00Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team and everyone that contributed, I am pleased to announce that the first milestone of Spring Boot 2.1 has been released and is available from &lt;a href="http://repo.spring.io/milestone/"&gt;our milestone repository&lt;/a&gt;. This release closes over &lt;a href="https://github.com/spring-projects/spring-boot/milestone/99?closed=1"&gt;180 issues and pull requests&lt;/a&gt;!&lt;/p&gt;
-&lt;p&gt;This first milestone builds on and requires &lt;a href="https://spring.io/blog/2018/07/26/spring-framework-5-1-goes-rc1"&gt;Spring Framework 5.1.RC1&lt;/a&gt;. It also builds on recent releases of a number of other Spring projects including &lt;a href="https://spring.io/blog/2018/07/26/spring-data-lovelace-rc1-available"&gt;Spring Data Lovelace RC1&lt;/a&gt; and &lt;a href="https://spring.io/blog/2018/07/30/spring-security-5-1-0-m2-released"&gt;Spring Security 5.1 M2&lt;/a&gt; to name just two.&lt;/p&gt;
-&lt;p&gt;Other highlights of this first milestone include:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Servlet 4 support with Undertow 2.0 and Tomcat 9.0&lt;/li&gt;
-  &lt;li&gt;Caches endpoint&lt;/li&gt;
-  &lt;li&gt;Support for querying an individual component&amp;rsquo;s health&lt;/li&gt;
-  &lt;li&gt;Support for &lt;a href="https://docs.spring.io/spring-framework/docs/5.1.0.RC1/spring-framework-reference/core.html#beans-definition-profiles"&gt;profile expressions&lt;/a&gt; in multi-profile YAML documents and &lt;code&gt;&amp;lt;springProfile&amp;gt;&lt;/code&gt; Logback configuration.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For a complete list of changes and upgrade instructions, please see the &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.1-Release-Notes"&gt;Spring Boot 2.1 Release Notes&lt;/a&gt; on the wiki and the &lt;a href="http://docs.spring.io/spring-boot/docs/2.1.0.M1/reference/htmlsingle/"&gt;updated reference documentation&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;If you want to get started with 2.1 and try out the new features, you can bootstrap a new project on &lt;a href="https://start.spring.io"&gt;https://start.spring.io&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.1.0.M1/reference/htmlsingle"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
