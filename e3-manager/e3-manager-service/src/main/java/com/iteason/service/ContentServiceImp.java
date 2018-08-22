@@ -24,6 +24,10 @@ import com.iteason.utils.JsonUtils;
 @Service
 public class ContentServiceImp implements ContentService {
 
+	//缓存的key值
+	private String CONTENT_LUNBO = "CONTENT_LUNBO";
+		
+		
 	@Autowired
 	private JedisClient jedisClient;
 	
@@ -33,7 +37,9 @@ public class ContentServiceImp implements ContentService {
 	
 	@Autowired
 	private TbContentMapper tbContentMapper;
-	
+	/**
+	 * 查询内容分类
+	 */
 	@Override
 	public List<EsayUIZtreeNode> findContentCatagory(Long parentId) {
 		List nodeList  = new ArrayList<EsayUIZtreeNode>();
@@ -80,6 +86,9 @@ public class ContentServiceImp implements ContentService {
 		tbContentCategoryMapper.updateByExampleSelective(parentCatagory, example);
 		//执行插入新目录操作
 		tbContentCategoryMapper.insertSelective(newCatagory);
+		
+		
+		
 		return E3Result.ok();
 	}
 	/**
@@ -91,10 +100,20 @@ public class ContentServiceImp implements ContentService {
 		tbContent.setCreated(new Date());
 		tbContent.setUpdated(new Date());
 		tbContentMapper.insert(tbContent);
+		
+		//删除掉缓存服务器中的相关缓存，防止更新后仍然读取到旧缓存，达到缓存同步的目的
+		try {
+			String lunbo_string = jedisClient.hget(CONTENT_LUNBO, tbContent.getCategoryId().toString());
+			if(StringUtils.isNotBlank(lunbo_string)){
+				//删除掉缓存服务器中的相关缓存，防止更新后仍然读取到旧缓存，达到缓存同步的目的
+				jedisClient.hdel(CONTENT_LUNBO, tbContent.getCategoryId().toString());
+			}
+			
+		} catch (Exception e) {
+		}
+		
 		return E3Result.ok();
 	}
-	//缓存的key值
-	private String CONTENT_LUNBO = "CONTENT_LUNBO";
 	
 	/**
 	 * 查询内容
