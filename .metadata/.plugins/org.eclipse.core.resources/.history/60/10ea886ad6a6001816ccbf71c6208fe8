@@ -1,0 +1,13 @@
+package com.iteason.pojo;
+/**
+ * 
+ * @author 阿荣
+ * @Description:solr 查询所需的字段 存入索引库
+ * @date: 2018年8月23日 下午9:11:04
+ */
+public class TbItemSolrResult {
+	
+	
+	
+	
+}

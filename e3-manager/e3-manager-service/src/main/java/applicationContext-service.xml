@@ -53,6 +53,7 @@
 	<!-- 声明需要暴露的服务接口 -->
 	<dubbo:service  interface="com.iteason.intef.ItemService" ref="itemServiceImp"/>
 	<dubbo:service  interface="com.iteason.intef.ContentService" ref="contentServiceImp"/>
+	<dubbo:service  interface="com.iteason.intef.SolrDocumentService" ref="solrDocumentServiceImp"/>
 	
 	
 </beans>

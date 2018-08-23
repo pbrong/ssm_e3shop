@@ -8,9 +8,6 @@
 	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
 	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 	
-	<!-- 读取资源文件 -->
-	<context:property-placeholder location="classpath:resource.properties"/>
-	
 	
 	<context:component-scan base-package="com.iteason.service"/>
 	
@@ -56,6 +53,7 @@
 	<!-- 声明需要暴露的服务接口 -->
 	<dubbo:service  interface="com.iteason.intef.ItemService" ref="itemServiceImp"/>
 	<dubbo:service  interface="com.iteason.intef.ContentService" ref="contentServiceImp"/>
+	<dubbo:service  interface="com.iteason.intef.SolrDocumentService" ref="solrDocumentServiceImp"/>
 	
 	
 </beans>

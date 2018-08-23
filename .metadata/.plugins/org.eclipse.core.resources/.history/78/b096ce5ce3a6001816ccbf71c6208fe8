@@ -1,0 +1,29 @@
+package com.iteason.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.iteason.intef.SolrDocumentService;
+import com.iteason.mapper.TbItemSolrMapper;
+import com.iteason.pojo.TbItemSolrResult;
+@Service
+public class SolrDocumentServiceImp implements SolrDocumentService {
+	
+	@Autowired
+	private TbItemSolrMapper tbItemSolrMapper;
+	
+	
+	/**
+	 * 添加商品索引文档
+	 */
+	@Override
+	public void addDocument() {
+		// 查询出所有所需的商品信息
+		List<TbItemSolrResult> list = tbItemSolrMapper.selectTbItemSolrResultList();
+		//获得SolrServer对象
+		
+	}
+
+}
