@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="solrjTest.deleteDocument" project="e3-manager-web" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testcase name="deleteDocument" classname="com.iteason.solrj.solrjTest" time="1.132"/>
+</testrun>

@@ -30,7 +30,7 @@ public class solrjTest {
 	}
 	
 	@Test
-	public void deleteDocument() throws SolrServerException, IOException {
+	private void deleteDocument() throws SolrServerException, IOException {
 		// 测试删除document
 		//获得solrserver对象
 		SolrServer httpSolrServer = new HttpSolrServer("http://localhost:8088/solr/");

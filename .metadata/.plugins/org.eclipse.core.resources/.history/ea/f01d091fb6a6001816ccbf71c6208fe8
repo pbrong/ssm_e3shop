@@ -6,6 +6,8 @@ import java.io.IOException;
 import org.apache.solr.client.solrj.SolrServer;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.client.solrj.impl.HttpSolrServer;
+import org.apache.solr.client.solrj.response.UpdateResponse;
+import org.apache.solr.common.SolrDocument;
 import org.apache.solr.common.SolrInputDocument;
 import org.junit.Test;
 
@@ -27,16 +29,5 @@ public class solrjTest {
 		//提交
 		httpSolrServer.commit();
 		
-	}
-	
-	@Test
-	public void deleteDocument() throws SolrServerException, IOException {
-		// 测试删除document
-		//获得solrserver对象
-		SolrServer httpSolrServer = new HttpSolrServer("http://localhost:8088/solr/");
-		//根据document的id删除索引文档
-		httpSolrServer.deleteById("doc01");
-		//提交
-		httpSolrServer.commit();
 	}
 }
