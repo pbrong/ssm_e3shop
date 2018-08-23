@@ -1,0 +1,14 @@
+package com.iteason.solrj;
+//测试solr搜索引擎
+
+import org.apache.solr.common.SolrDocument;
+import org.junit.Test;
+
+public class solrjTest {
+
+	@Test
+	public void testSolrj(){
+		
+		SolrDocument solrDocument = new SolrDocument();
+	}
+}

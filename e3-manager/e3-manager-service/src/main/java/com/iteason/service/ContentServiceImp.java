@@ -108,7 +108,6 @@ public class ContentServiceImp implements ContentService {
 				//删除掉缓存服务器中的相关缓存，防止更新后仍然读取到旧缓存，达到缓存同步的目的
 				jedisClient.hdel(CONTENT_LUNBO, tbContent.getCategoryId().toString());
 			}
-			
 		} catch (Exception e) {
 		}
 		
