@@ -884,3 +884,6 @@ Java Model Exception: Java Model Status [e3-manager does not exist]
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2018-08-23 22:45:03.638
 !MESSAGE The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-08-24 14:17:17.873
+!MESSAGE The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
