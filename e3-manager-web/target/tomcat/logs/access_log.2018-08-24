@@ -1187,3 +1187,11 @@
 127.0.0.1 - - [24/Aug/2018:00:59:25 +0800] "GET /image/pictureShow3.jpg HTTP/1.1" 404 949 http-bio-8082-exec-4 2
 127.0.0.1 - - [24/Aug/2018:00:59:28 +0800] "GET /image/pictureShow1.jpg HTTP/1.1" 404 949 http-bio-8082-exec-4 8
 127.0.0.1 - - [24/Aug/2018:00:59:31 +0800] "GET /image/pictureShow2.jpg HTTP/1.1" 404 949 http-bio-8082-exec-4 3
+0:0:0:0:0:0:0:1 - - [24/Aug/2018:15:08:03 +0800] "GET /image/1946ceef1ea90c932e1f7c8bb631a3fa.jpg HTTP/1.1" 304 - http-bio-8082-exec-7 59
+0:0:0:0:0:0:0:1 - - [24/Aug/2018:15:08:03 +0800] "GET /image/c9ad9a551b6d5daa8875133493722110.jpg HTTP/1.1" 304 - http-bio-8082-exec-6 33
+0:0:0:0:0:0:0:1 - - [24/Aug/2018:15:08:03 +0800] "GET /image/53e9968908af7b4478fbccdd77d46675.jpg HTTP/1.1" 304 - http-bio-8082-exec-8 34
+0:0:0:0:0:0:0:1 - - [24/Aug/2018:15:08:03 +0800] "GET /image/b463a2b010033397a2dcd09aa6f57d0c.jpg HTTP/1.1" 304 - http-bio-8082-exec-5 11
+0:0:0:0:0:0:0:1 - - [24/Aug/2018:15:08:09 +0800] "GET /image/1946ceef1ea90c932e1f7c8bb631a3fa.jpg HTTP/1.1" 304 - http-bio-8082-exec-8 4
+0:0:0:0:0:0:0:1 - - [24/Aug/2018:15:08:09 +0800] "GET /image/53e9968908af7b4478fbccdd77d46675.jpg HTTP/1.1" 304 - http-bio-8082-exec-6 5
+0:0:0:0:0:0:0:1 - - [24/Aug/2018:15:08:09 +0800] "GET /image/b463a2b010033397a2dcd09aa6f57d0c.jpg HTTP/1.1" 304 - http-bio-8082-exec-5 3
+0:0:0:0:0:0:0:1 - - [24/Aug/2018:15:08:09 +0800] "GET /image/c9ad9a551b6d5daa8875133493722110.jpg HTTP/1.1" 304 - http-bio-8082-exec-7 4
