@@ -2,3 +2,11 @@
 0:0:0:0:0:0:0:1 - - [25/Aug/2018:09:06:42 +0800] "GET /image/c9ad9a551b6d5daa8875133493722110.jpg HTTP/1.1" 200 219651 http-bio-8082-exec-3 200
 0:0:0:0:0:0:0:1 - - [25/Aug/2018:09:06:42 +0800] "GET /image/1946ceef1ea90c932e1f7c8bb631a3fa.jpg HTTP/1.1" 200 88521 http-bio-8082-exec-1 187
 0:0:0:0:0:0:0:1 - - [25/Aug/2018:09:06:42 +0800] "GET /image/b463a2b010033397a2dcd09aa6f57d0c.jpg HTTP/1.1" 200 152257 http-bio-8082-exec-4 198
+0:0:0:0:0:0:0:1 - - [25/Aug/2018:09:23:28 +0800] "GET /image/53e9968908af7b4478fbccdd77d46675.jpg HTTP/1.1" 304 - http-bio-8082-exec-6 161
+0:0:0:0:0:0:0:1 - - [25/Aug/2018:09:23:28 +0800] "GET /image/c9ad9a551b6d5daa8875133493722110.jpg HTTP/1.1" 304 - http-bio-8082-exec-5 152
+0:0:0:0:0:0:0:1 - - [25/Aug/2018:09:23:28 +0800] "GET /image/1946ceef1ea90c932e1f7c8bb631a3fa.jpg HTTP/1.1" 304 - http-bio-8082-exec-7 174
+0:0:0:0:0:0:0:1 - - [25/Aug/2018:09:23:28 +0800] "GET /image/b463a2b010033397a2dcd09aa6f57d0c.jpg HTTP/1.1" 304 - http-bio-8082-exec-4 152
+127.0.0.1 - - [25/Aug/2018:09:26:45 +0800] "GET /image/1946ceef1ea90c932e1f7c8bb631a3fa.jpg HTTP/1.1" 304 - http-bio-8082-exec-1 13
+127.0.0.1 - - [25/Aug/2018:09:26:45 +0800] "GET /image/53e9968908af7b4478fbccdd77d46675.jpg HTTP/1.1" 304 - http-bio-8082-exec-5 11
+127.0.0.1 - - [25/Aug/2018:09:26:45 +0800] "GET /image/b463a2b010033397a2dcd09aa6f57d0c.jpg HTTP/1.1" 304 - http-bio-8082-exec-1 13
+127.0.0.1 - - [25/Aug/2018:09:26:45 +0800] "GET /image/c9ad9a551b6d5daa8875133493722110.jpg HTTP/1.1" 304 - http-bio-8082-exec-7 25

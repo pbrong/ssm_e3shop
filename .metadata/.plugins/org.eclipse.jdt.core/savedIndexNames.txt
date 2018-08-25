@@ -24,7 +24,6 @@ INDEX VERSION 1.127+D:\workspace_e3shop\.metadata\.plugins\org.eclipse.jdt.core
 773436540.index
 134685340.index
 3793923545.index
-1968264308.index
 1086660315.index
 4181743691.index
 3033174491.index
