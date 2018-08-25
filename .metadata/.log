@@ -1332,3 +1332,9 @@ java.lang.IllegalArgumentException: Index out of bounds
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2018-08-25 16:20:05.131
 !MESSAGE The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-08-25 16:24:54.717
+!MESSAGE The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-08-25 16:25:01.487
+!MESSAGE The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2

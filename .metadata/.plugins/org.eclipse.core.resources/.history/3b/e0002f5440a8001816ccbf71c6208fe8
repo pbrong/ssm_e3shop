@@ -15,14 +15,14 @@ import javax.jms.Topic;
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.junit.Test;
 
-
+/**
+ * 
+ * @author 阿荣
+ * @Description:测试ActiveMQ PTP模式 点对点
+ * @date: 2018年8月25日 下午3:46:12
+ */
 public class ActiveMQTest {
-	/**
-	 * 
-	 * @author 阿荣
-	 * @Description:测试ActiveMQ PTP模式 点对点
-	 * @date: 2018年8月25日 下午3:46:12
-	 */
+
 	@Test
 	public void testQueueProducer() throws Exception {
 		// 第一步：创建ConnectionFactory对象，需要指定服务端ip及端口号。
@@ -93,12 +93,7 @@ public class ActiveMQTest {
 		connection.close();
 	}
 	
-	/**
-	 * 
-	 * @author 阿荣
-	 * @Description:测试ActiveMQ 发布订阅模式 点对面
-	 * @date: 2018年8月25日 下午3:46:12
-	 */
+	
 	@Test
 	public void testTopicProducer() throws Exception {
 		// 第一步：创建ConnectionFactory对象，需要指定服务端ip及端口号。

@@ -15,14 +15,14 @@ import javax.jms.Topic;
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.junit.Test;
 
-
+/**
+ * 
+ * @author 阿荣
+ * @Description:测试ActiveMQ PTP模式 点对点
+ * @date: 2018年8月25日 下午3:46:12
+ */
 public class ActiveMQTest {
-	/**
-	 * 
-	 * @author 阿荣
-	 * @Description:测试ActiveMQ PTP模式 点对点
-	 * @date: 2018年8月25日 下午3:46:12
-	 */
+
 	@Test
 	public void testQueueProducer() throws Exception {
 		// 第一步：创建ConnectionFactory对象，需要指定服务端ip及端口号。
@@ -93,17 +93,12 @@ public class ActiveMQTest {
 		connection.close();
 	}
 	
-	/**
-	 * 
-	 * @author 阿荣
-	 * @Description:测试ActiveMQ 发布订阅模式 点对面
-	 * @date: 2018年8月25日 下午3:46:12
-	 */
+	
 	@Test
 	public void testTopicProducer() throws Exception {
 		// 第一步：创建ConnectionFactory对象，需要指定服务端ip及端口号。
 		// brokerURL服务器的ip及端口号
-		ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://47.106.133.57:61616");
+		ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://192.168.25.168:61616");
 		// 第二步：使用ConnectionFactory对象创建一个Connection对象。
 		Connection connection = connectionFactory.createConnection();
 		// 第三步：开启连接，调用Connection对象的start方法。
@@ -135,7 +130,7 @@ public class ActiveMQTest {
 	@Test
 	public void testTopicConsumer() throws Exception {
 		// 第一步：创建一个ConnectionFactory对象。
-		ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://47.106.133.57:61616");
+		ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://192.168.25.168:61616");
 		// 第二步：从ConnectionFactory对象中获得一个Connection对象。
 		Connection connection = connectionFactory.createConnection();
 		// 第三步：开启连接。调用Connection对象的start方法。
