@@ -1,0 +1,19 @@
+package com.iteason.search.controller;
+
+import org.springframework.stereotype.Controller;
+/**
+ * 
+ * @author 阿荣
+ * @Description:搜索结果
+ * @date: 2018年8月24日 下午7:33:47
+ */
+import org.springframework.web.bind.annotation.RequestMapping;
+@Controller
+public class SearchResultController {
+
+	@RequestMapping(value="/search.html")
+	public String fun(String keyword){
+		System.out.println("success");
+		return "search";
+	}
+}

@@ -54,6 +54,7 @@
 	<dubbo:service  interface="com.iteason.intef.ItemService" ref="itemServiceImp"/>
 	<dubbo:service  interface="com.iteason.intef.ContentService" ref="contentServiceImp"/>
 	<dubbo:service  interface="com.iteason.intef.SolrDocumentService" ref="solrDocumentServiceImp"/>
+	<dubbo:service  interface="com.iteason.intef.SearchResultService" ref="searchResultServiceImp"/>
 	
 	
 </beans>

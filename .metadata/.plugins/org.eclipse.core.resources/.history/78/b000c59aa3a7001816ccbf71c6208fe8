@@ -1,0 +1,43 @@
+package com.iteason.dao;
+
+import java.util.List;
+
+import org.apache.solr.client.solrj.SolrQuery;
+import org.apache.solr.client.solrj.SolrServer;
+import org.apache.solr.client.solrj.impl.HttpSolrServer;
+import org.springframework.stereotype.Repository;
+/**
+ * 
+ * @author 阿荣
+ * @Description:solr的dao
+ * @date: 2018年8月24日 下午9:10:06
+ */
+
+import com.iteason.pojo.SearchResult;
+@Repository
+public class SearchResultDao {
+
+	public SearchResult searchResult(String keyword) {
+		//创建solrServer对象连接solr
+		SolrServer httpSolrServer = new HttpSolrServer("http://localhost:8088/solr/");
+		//创建solrQuery封装查询条件
+		SolrQuery query = new SolrQuery();
+		//封装条件
+		//默认查询域
+		query.set("df","item_keywords");
+		query.setQuery(keyword);
+		//设置默认条数为24条
+		query.setStart(0);
+		query.setRows(24);
+		//设置高亮
+		query.setHighlight(true);
+		//设置高亮域
+		query.addHighlightField("item_title");
+		query.addHighlightField("item_sell_point");
+		query.addHighlightField("item_category_name");
+		return null;
+	}
+	
+	
+	
+}

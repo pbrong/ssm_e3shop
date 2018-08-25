@@ -1,0 +1,16 @@
+package com.iteason.service;
+
+import java.util.List;
+
+import com.iteason.intef.SearchResultService;
+import com.iteason.pojo.SearchResult;
+
+public class SearchResultServiceImp implements SearchResultService {
+
+	@Override
+	public List<SearchResult> searchResult(String keyword) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

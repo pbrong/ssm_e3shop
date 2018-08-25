@@ -22,7 +22,7 @@
 <div class="linknav">
 	<div class="schArticle">
 		<a href="/article/search?keyword=%E6%9C%88%E9%A5%BC" target="_blank">找到和“<span>${query}</span>”相关的文章<span
-			id="articlenum">${totalPages }</span>篇&gt;&gt;
+			id="articlenum">${totalPage }</span>篇&gt;&gt;
 		</a>
 	</div>
 	<div class="breadcrumb">
@@ -36,9 +36,9 @@
     <div class="r-filter">
       <div class="f-sort">
         <div class="pagin">
-          <span class="txt"><span class="n">${page }</span>/${totalPages }</span>
+          <span class="txt"><span class="n">${currentRows }</span>/${totalCount }</span>
           <span class="prev">上一页</span><span class="next">下一页</span>       	</div>
-        <div class="total">共<span>${recourdCount }</span>个商品</div>
+        <div class="total">共<span>${totalCount }</span>个商品</div>
       </div>
     </div>
         
@@ -50,7 +50,7 @@
             <div class="l-wrap">
 				<div class="pic">
 					<a class="trackref" href="http://localhost:8086/item/${item.id}.html" title="" target="_blank">
-						<img src="${item.images[0] }" style="display:inline"/>
+						<img src="${item.image }" style="display:inline"/>
 					</a>
 				</div>
 	            <div class="price">
@@ -59,7 +59,7 @@
 	            <div class="title-a">
 	                <a class="trackref presaleSign_225865" href="http://localhost:8086/item/${item.id}.html" target="_blank">${item.title }</a>
 	            </div>
-	        	<div class="title-b" style=""><a class="trackref" href="http://localhost:8086/item/${item.id}.html" target="_blank">${sell_point }</a></div>
+	        	<div class="title-b" style=""><a class="trackref" href="http://localhost:8086/item/${item.id}.html" target="_blank">${item.sell_point }</a></div>
 	            <div class="comment">
 	                <div class="owner_shop_list">自营</div>                    
 	            </div>
