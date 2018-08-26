@@ -20,6 +20,7 @@ public class SearchResultServiceImp implements SearchResultService {
 	@Override
 	public SearchResult searchResult(String keyword) throws Exception{
 		SearchResult result = searchResultDao.searchResult(keyword);
+		int  a = 1/0;
 		return result;
 	}
 

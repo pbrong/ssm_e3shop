@@ -9,6 +9,9 @@
         http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 	
+	<!-- 全局异常处理器 -->
+	<bean class="com.iteason.search.exception.GlobalExceptionResolver"/>
+	
 	<!-- 加载配置文件给picturecontroller读取 -->
 	<context:property-placeholder location="classpath:resource.properties"/>
 	<!-- springmvc包扫描 -->
