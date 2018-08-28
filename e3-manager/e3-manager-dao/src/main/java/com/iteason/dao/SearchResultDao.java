@@ -60,9 +60,15 @@ public class SearchResultDao {
 			item.setPrice((long) document.get("item_price"));
 			//获得高亮域
 			Map<String, List<String>> d = documentsH.get(document.get("id"));
-			//item.setCategory_name(d.get("item_category_name").get(0));
-			//item.setSell_point(d.get("item_sell_point").get(0));
-			//item.setTitle(d.get("item_title").get(0));
+			if(d.get("item_category_name").size() > 0){
+				item.setCategory_name(d.get("item_category_name").get(0));
+			}
+			if(d.get("item_sell_point").size() > 0){
+				item.setSell_point(d.get("item_sell_point").get(0));
+			}
+			if(d.get("item_title").size() > 0){
+				item.setTitle(d.get("item_title").get(0));
+			}
 			//封装好一个就往List中添加一个
 			itemList.add(item);
 		}

@@ -2,4 +2,8 @@
 <typeInfoHistroy>
 <typeInfo handle="=e3-manager-interface/src\/main\/java&lt;com.iteason.intef{ItemService.java[ItemService" modifiers="513" timestamp="1534566123656"/>
 <typeInfo handle="=e3-manager-interface/src\/main\/java&lt;com.iteason.intef{ContentService.java[ContentService" modifiers="513" timestamp="1534660569065"/>
+<typeInfo handle="=e3-manager-interface/src\/main\/java&lt;com.iteason.intef{SolrDocumentService.java[SolrDocumentService" modifiers="513" timestamp="1535036018961"/>
+<typeInfo handle="=e3-manager-interface/src\/main\/java&lt;com.iteason.intef{SearchResultService.java[SearchResultService" modifiers="513" timestamp="1535118740640"/>
+<typeInfo handle="=e3-manager-web/D:\/workspace_e3shop\/repository\/org\/springframework\/spring-webmvc\/4.2.4.RELEASE\/spring-webmvc-4.2.4.RELEASE.jar&lt;org.springframework.web.servlet(HandlerExceptionResolver.class[HandlerExceptionResolver" modifiers="1537" timestamp="1463390358142"/>
+<typeInfo handle="=e3-manager-web/D:\/workspace_e3shop\/repository\/org\/springframework\/spring-webmvc\/4.2.4.RELEASE\/spring-webmvc-4.2.4.RELEASE.jar&lt;org.springframework.web.servlet.mvc.method.annotation(ResponseBodyEmitter$Handler.class[Handler" modifiers="1544" timestamp="1463390358142"/>
 </typeInfoHistroy>
