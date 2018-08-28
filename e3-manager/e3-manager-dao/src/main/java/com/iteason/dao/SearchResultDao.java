@@ -44,6 +44,9 @@ public class SearchResultDao {
 		query.addHighlightField("item_title");
 		query.addHighlightField("item_sell_point");
 		query.addHighlightField("item_category_name");
+		//设置高亮域前后缀
+		query.setHighlightSimplePre("<span style='color:red'>");
+		query.setHighlightSimplePost("</span>");
 		//获得查询结果
 		QueryResponse response = httpSolrServer.query(query);
 		//获取document结果集
@@ -60,15 +63,10 @@ public class SearchResultDao {
 			item.setPrice((long) document.get("item_price"));
 			//获得高亮域
 			Map<String, List<String>> d = documentsH.get(document.get("id"));
-			if(d.get("item_category_name").size() > 0){
-				item.setCategory_name(d.get("item_category_name").get(0));
-			}
-			if(d.get("item_sell_point").size() > 0){
-				item.setSell_point(d.get("item_sell_point").get(0));
-			}
-			if(d.get("item_title").size() > 0){
-				item.setTitle(d.get("item_title").get(0));
-			}
+				//对高亮域中的相对值进行判断，没有的话从普通document中取
+				item.setCategory_name(d.containsKey("item_category_name")?d.get("item_category_name").get(0):(String) document.get("item_category_name"));
+				item.setSell_point(d.containsKey("item_sell_point")?d.get("item_sell_point").get(0):(String) document.get("item_sell_point"));
+				item.setTitle(d.containsKey("item_title")?d.get("item_title").get(0):(String) document.get("item_title"));
 			//封装好一个就往List中添加一个
 			itemList.add(item);
 		}
