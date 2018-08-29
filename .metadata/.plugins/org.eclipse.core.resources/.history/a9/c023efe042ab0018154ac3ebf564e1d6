@@ -1,0 +1,19 @@
+package com.iteason.activemq;
+
+import javax.jms.Message;
+import javax.jms.MessageListener;
+/**
+ * 
+ * @author 阿荣
+ * @Description:接受activemq消息
+ * @date: 2018年8月29日 下午12:19:09
+ */
+public class MyMessageListener implements MessageListener {
+
+	@Override
+	public void onMessage(Message message) {
+		 
+
+	}
+
+}
