@@ -53,13 +53,18 @@ public class ItemAddMessageListener implements MessageListener {
 			httpSolrServer.add(document);
 			//提交索引文档
 			httpSolrServer.commit();
+			 
+			
+			
 		} catch (JMSException e) {
 			e.printStackTrace();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		} catch (SolrServerException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

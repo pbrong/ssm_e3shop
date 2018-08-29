@@ -1,16 +1,11 @@
 package com.iteason.activemq;
 
-import java.io.IOException;
-
 import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.MessageListener;
 import javax.jms.TextMessage;
 
-import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.client.solrj.impl.HttpSolrServer;
-import org.apache.solr.common.SolrDocument;
-import org.apache.solr.common.SolrInputDocument;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.iteason.mapper.TbItemSolrMapper;
@@ -42,24 +37,13 @@ public class ItemAddMessageListener implements MessageListener {
 			Thread.sleep(1000);
 			//从数据库中查询该商品并添加到索引库
 			TbItemSolrResult result = tbItemSolrMapper.selectTbItemSolrResult(Long.parseLong(ItemId));
-			 SolrInputDocument document = new SolrInputDocument();
-			document.addField("id",result.getId());
-			document.addField("item_title", result.getTitle());
-			document.addField("item_sell_point", result.getSell_point());
-			document.addField("item_price", result.getPrice());
-			document.addField("item_image", result.getImage());
-			document.addField("item_category_name", result.getCategory_name());
-			//提交每个document
-			httpSolrServer.add(document);
-			//提交索引文档
-			httpSolrServer.commit();
+			
+			 
+			
+			
 		} catch (JMSException e) {
 			e.printStackTrace();
 		} catch (InterruptedException e) {
-			e.printStackTrace();
-		} catch (SolrServerException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
