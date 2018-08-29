@@ -1,4 +1,4 @@
-package com.iteason.activemq;
+/*package com.iteason.activemq;
 
 import javax.jms.Destination;
 import javax.jms.JMSException;
@@ -12,12 +12,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.MessageCreator;
 
-/**
+*//**
  * 
  * @author 阿荣
  * @Description:测试activemq整合spring
  * @date: 2018年8月29日 上午11:47:07
- */
+ *//*
 public class ActiveMQ_Spring {
 	@Test
 	public void testA(){
@@ -50,3 +50,4 @@ public class ActiveMQ_Spring {
 		System.in.read();
 	}
 }
+*/

@@ -5,9 +5,18 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
+import javax.annotation.Resource;
+import javax.jms.Destination;
+import javax.jms.JMSException;
+import javax.jms.Message;
+import javax.jms.Session;
+import javax.jms.TextMessage;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Service;
 
 import com.github.pagehelper.PageHelper;
@@ -28,6 +37,12 @@ import com.iteason.pojo.TbItemExample.Criteria;
 import com.iteason.utils.IDUtils;
 @Service
 public class ItemServiceImp implements ItemService {
+	
+	@Autowired
+	private JmsTemplate jmsTemplate;
+	@Resource
+	private Destination topicDestination;
+	
 	
 	@Autowired
 	private TbItemDescMapper tbItemDescMapper;
@@ -110,7 +125,15 @@ public class ItemServiceImp implements ItemService {
 		//插入 tb_item_desc表
 		tbItemDescMapper.insert(tbItemDesc);
 		
-		
+		//通过activemq发送商品id，让接收端同步到solr索引库中
+		jmsTemplate.send(topicDestination, new MessageCreator() {
+			//发送消息
+			@Override
+			public Message createMessage(Session session) throws JMSException {
+				TextMessage message = session.createTextMessage(itemId.toString());
+				return message;
+			}
+		});
 		}
 
 	/**

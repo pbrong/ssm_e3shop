@@ -1,0 +1,19 @@
+package com.iteason.activemq;
+
+import javax.jms.Message;
+import javax.jms.MessageListener;
+/**
+ * 
+ * @author 阿荣
+ * @Description:商品添加后，接受activemq中的商品id并查询
+ * @date: 2018年8月29日 下午6:17:08
+ */
+public class ItemAddMessageListener implements MessageListener {
+
+	@Override
+	public void onMessage(Message message) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

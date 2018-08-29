@@ -1,15 +1,15 @@
-package com.iteason.activemq;
+/*package com.iteason.activemq;
 
 import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.MessageListener;
 import javax.jms.TextMessage;
-/**
+*//**
  * 
  * @author 阿荣
  * @Description:接受activemq消息
  * @date: 2018年8月29日 下午12:19:09
- */
+ *//*
 public class MyMessageListener implements MessageListener {
 
 	@Override
@@ -18,9 +18,9 @@ public class MyMessageListener implements MessageListener {
 		try {
 			System.out.println(text.getText());
 		} catch (JMSException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 
 }
+*/
