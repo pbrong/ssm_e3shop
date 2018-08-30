@@ -68,7 +68,7 @@
                 <div class="pItemsName">
                     <div class="cm">
                         <h1 id="base_name-sf">${item.title }</h1><br></br>
-						<strong id="adword-sf" title="" class="">${item.sellPoint }</strong>
+						<strong id="adword-sf" title="" class="">${item.sell_point }</strong>
                     </div>
                 </div>
                 <div class="pItemsPrice" id="price-sf">

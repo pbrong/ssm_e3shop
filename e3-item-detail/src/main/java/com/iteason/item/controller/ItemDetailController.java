@@ -25,7 +25,7 @@ public class ItemDetailController {
 	/**
 	 * 商品详情
 	 */
-	@RequestMapping(value="/item/${itemId}")
+	@RequestMapping(value="/item/{itemId}")
 	public String selectItemDetail(@PathVariable Long itemId,Model model){
 		
 		TbItemSolrResult item  =  itemDetailService.selectItemDetail(itemId);

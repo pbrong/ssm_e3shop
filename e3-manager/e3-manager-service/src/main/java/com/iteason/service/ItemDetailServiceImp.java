@@ -42,7 +42,7 @@ public class ItemDetailServiceImp implements ItemDetailService {
 
 	@Override
 	public TbItemDesc selectItemDesc(Long itemId) {
-		// 查询商品详情
+		// 查询商品详情l                
 		TbItemDesc tbItemDesc = tbItemDescMapper.selectByPrimaryKey(itemId);
 		return tbItemDesc;
 	}
