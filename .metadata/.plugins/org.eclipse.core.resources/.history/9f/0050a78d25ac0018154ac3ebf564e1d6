@@ -148,8 +148,6 @@ public class ContentServiceImp implements ContentService {
 			//添加hash缓存格式为：key filed value
 			try {
 				jedisClient.hset(CONTENT_LUNBO,cid, contentJson);
-				//设置缓存的过期时间为1小时
-				jedisClient.expire(CONTENT_LUNBO, 3600);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
