@@ -1,0 +1,21 @@
+package com.iteason.service;
+
+import com.iteason.intef.ItemDetailService;
+import com.iteason.pojo.TbItemDesc;
+import com.iteason.pojo.TbItemSolrResult;
+
+public class ItemDetailServiceImp implements ItemDetailService {
+
+	@Override
+	public TbItemSolrResult selectItemDetail(Long itemId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public TbItemDesc selectItemDesc(Long itemId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

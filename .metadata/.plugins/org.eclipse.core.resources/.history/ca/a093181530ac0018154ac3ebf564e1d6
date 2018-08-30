@@ -1,0 +1,26 @@
+package com.iteason.service;
+
+import org.springframework.stereotype.Service;
+
+import com.iteason.intef.ItemDetailService;
+import com.iteason.pojo.TbItemDesc;
+import com.iteason.pojo.TbItemSolrResult;
+@Service
+public class ItemDetailServiceImp implements ItemDetailService {
+
+	@
+	
+	@Override
+	public TbItemSolrResult selectItemDetail(Long itemId) {
+		// 查询商品详情
+		
+		return null;
+	}
+
+	@Override
+	public TbItemDesc selectItemDesc(Long itemId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,39 @@
+package com.iteason.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.iteason.intef.ItemDetailService;
+import com.iteason.mapper.TbItemCatMapper;
+import com.iteason.mapper.TbItemDescMapper;
+import com.iteason.mapper.TbItemMapper;
+import com.iteason.pojo.TbItem;
+import com.iteason.pojo.TbItemDesc;
+import com.iteason.pojo.TbItemSolrResult;
+@Service
+public class ItemDetailServiceImp implements ItemDetailService {
+
+	@Autowired
+	private TbItemMapper tbItemMapper;
+	@Autowired
+	private TbItemDescMapper tbItemDescMapper;
+	@Autowired
+	private TbItemCatMapper tbItemCatMapper;
+	@Override
+	public TbItemSolrResult selectItemDetail(Long itemId) {
+		TbItemSolrResult tbItemSolrResult = new TbItemSolrResult();
+		// 查询商品详情
+		TbItem item = tbItemMapper.selectByPrimaryKey(itemId);
+		tbItemSolrResult.setId(item.getId().toString());
+		tbItemSolrResult.setCategory_name(item.getc);
+		
+		return null;
+	}
+
+	@Override
+	public TbItemDesc selectItemDesc(Long itemId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
