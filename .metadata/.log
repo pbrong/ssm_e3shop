@@ -3803,3 +3803,6 @@ org.eclipse.jdi.TimeoutException: Timeout occurred while waiting for packet 1040
 
 !ENTRY org.eclipse.wst.common.project.facet.core 4 0 2018-08-30 15:50:32.966
 !MESSAGE Project facet grails.app has not been defined. It is used in plugin com.vmware.vfabric.ide.eclipse.tcserver.core.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-08-30 15:54:28.472
+!MESSAGE The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2

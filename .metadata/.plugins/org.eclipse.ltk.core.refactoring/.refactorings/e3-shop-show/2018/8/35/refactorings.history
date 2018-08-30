@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;e3-item-detail/conf&apos;&#x0D;&#x0A;- Original project: &apos;e3-shop-show&apos;&#x0D;&#x0A;- Destination element: &apos;e3-item-detail/conf&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     springmvc.xml&#x0D;&#x0A;     log4j.properties&#x0D;&#x0A;     resource.properties" description="Copy files" destination="=e3-item-detail/conf" element1="conf/springmvc.xml" element2="conf/log4j.properties" element3="conf/resource.properties" files="3" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1535615738429" units="0" version="1.0"/>
+</session>
