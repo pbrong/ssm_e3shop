@@ -56,28 +56,13 @@ public class ItemDetailServiceImp implements ItemDetailService {
 		
 		//添加到缓存中
 		jedisClient.set("ITEM_INFO:"+itemId+":BASE", JsonUtils.objectToJson(tbItemSolrResult));
-		//设置过期时间为1h
-		jedisClient.expire("ITEM_INFO:"+itemId+":BASE", 3600);
-		
 		return tbItemSolrResult;
 	}
 
 	@Override
 	public TbItemDesc selectItemDesc(Long itemId) {
-		// 查询商品详情l    
-		//判断缓存中是否有该详情
-		String descJson = jedisClient.get("ITEM_INFO:"+itemId+":DESC");
-		if(StringUtils.isNotEmpty(descJson)){
-			//不是空串，通过json工具转成对象
-			TbItemDesc jsonToPojo = JsonUtils.jsonToPojo(descJson, TbItemDesc.class);
-			//返回
-			return jsonToPojo;
-		}
-		
-		//不存在缓存，添加缓存并设置过期时间为1h
+		// 查询商品详情l                
 		TbItemDesc tbItemDesc = tbItemDescMapper.selectByPrimaryKey(itemId);
-		jedisClient.set("ITEM_INFO:"+itemId+":DESC", JsonUtils.objectToJson(tbItemDesc));
-		jedisClient.expire("ITEM_INFO:"+itemId+":DESC", 3600);
 		return tbItemDesc;
 	}
 
