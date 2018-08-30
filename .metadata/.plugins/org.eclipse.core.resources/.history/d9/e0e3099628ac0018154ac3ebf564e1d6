@@ -22,14 +22,6 @@ public class TbItemSolrResult implements Serializable {
 	private long price;
 	private String image;
 	private String category_name;
-	
-	
-	//images数组
-	public String[] getImages(){
-		String[] strings = this.image.split(",");
-		return strings;
-	}
-	
 	public String getId() {
 		return id;
 	}

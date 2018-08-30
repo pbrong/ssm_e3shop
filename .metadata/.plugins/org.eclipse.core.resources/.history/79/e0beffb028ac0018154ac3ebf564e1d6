@@ -26,8 +26,7 @@ public class TbItemSolrResult implements Serializable {
 	
 	//images数组
 	public String[] getImages(){
-		String[] strings = this.image.split(",");
-		return strings;
+		return null;
 	}
 	
 	public String getId() {
