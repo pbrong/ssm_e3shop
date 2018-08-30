@@ -22,16 +22,12 @@ public class TbItemSolrResult implements Serializable {
 	private long price;
 	private String image;
 	private String category_name;
-	private String[] images;
+	
 	
 	//images数组
 	public String[] getImages(){
 		String[] strings = this.image.split(",");
 		return strings;
-	}
-	
-	public void setImages(String[] images){
-		this.images = images;
 	}
 	
 	public String getId() {

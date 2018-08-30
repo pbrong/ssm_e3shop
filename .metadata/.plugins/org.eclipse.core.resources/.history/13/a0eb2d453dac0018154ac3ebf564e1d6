@@ -23,7 +23,7 @@ public class JsonUtils {
      * @param data
      * @return
      */
-    public static String objectToJson(Object data) {
+    public static String objectToJson(Object data,String[] includes) {
     	//指定不转为json
     	try {
 			String string = MAPPER.writeValueAsString(data);
