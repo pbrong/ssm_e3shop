@@ -1,7 +1,0 @@
-package com.iteason.mapper;
-
-import com.iteason.pojo.TbItemSolrResult;
-
-public interface TbItemSolrMapper {
-	TbItemSolrResult selectTbItemSolrResult();
-}

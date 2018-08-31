@@ -6,4 +6,6 @@
 <typeInfo handle="=e3-manager-interface/src\/main\/java&lt;com.iteason.intef{SearchResultService.java[SearchResultService" modifiers="513" timestamp="1535118740640"/>
 <typeInfo handle="=e3-manager-web/D:\/workspace_e3shop\/repository\/org\/springframework\/spring-webmvc\/4.2.4.RELEASE\/spring-webmvc-4.2.4.RELEASE.jar&lt;org.springframework.web.servlet(HandlerExceptionResolver.class[HandlerExceptionResolver" modifiers="1537" timestamp="1463390358142"/>
 <typeInfo handle="=e3-manager-web/D:\/workspace_e3shop\/repository\/org\/springframework\/spring-webmvc\/4.2.4.RELEASE\/spring-webmvc-4.2.4.RELEASE.jar&lt;org.springframework.web.servlet.mvc.method.annotation(ResponseBodyEmitter$Handler.class[Handler" modifiers="1544" timestamp="1463390358142"/>
+<typeInfo handle="=e3-manager-service/D:\/workspace_e3shop\/repository\/org\/apache\/activemq\/activemq-all\/5.11.2\/activemq-all-5.11.2.jar&lt;javax.jms(MessageListener.class[MessageListener" modifiers="1537" timestamp="1463412213137"/>
+<typeInfo handle="=e3-manager-interface/src\/main\/java&lt;com.iteason.intef{ItemDetailService.java[ItemDetailService" modifiers="513" timestamp="1535616699930"/>
 </typeInfoHistroy>

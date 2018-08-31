@@ -7,8 +7,9 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="e3-shop-search"/>
+			<item value="e3-item-detail"/>
 			<item value="e3-parent"/>
+			<item value="e3-shop-search"/>
 			<item value="e3-shop-show"/>
 			<item value="e3-manager-web"/>
 		</list>
