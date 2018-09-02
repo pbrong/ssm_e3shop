@@ -161,9 +161,7 @@
                     <div class="pic-items" style="position: absolute; width: 50px; height: 300px; overflow: hidden;">
                         <ul style="position: absolute; left: 0px; top: 0px; height: 240px;">
                            
-                           <#list  item.images  as  image >
-                           <li style="float: left;"><img title="${item.title } " alt="${item.title }" src="${image }"></li>
-                           </#list>
+                         
                         
                         </ul>
                     </div>

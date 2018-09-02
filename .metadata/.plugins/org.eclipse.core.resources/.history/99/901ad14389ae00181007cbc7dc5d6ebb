@@ -1,0 +1,55 @@
+package com.iteason.item.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.iteason.intef.ItemDetailService;
+import com.iteason.pojo.TbItemDesc;
+import com.iteason.pojo.TbItemSolrResult;
+
+/**
+ * 
+ * @author 阿荣
+ * @Description:show the item 
+ * @date: 2018年8月30日 下午4:00:58
+ */
+@Controller
+public class ItemDetailController {
+	@Autowired
+	private ItemDetailService itemDetailService;
+	
+	/**
+	 * 商品详情(动态加载)
+	 */
+	/*@RequestMapping(value="/item/{itemId}")
+	public String selectItemDetail(@PathVariable Long itemId,Model model){
+		
+		TbItemSolrResult item  =  itemDetailService.selectItemDetail(itemId);
+		TbItemDesc desc = itemDetailService.selectItemDesc(itemId);
+		
+		//商品信息
+		model.addAttribute("item", item);
+		//商品详情
+		model.addAttribute("itemDesc", desc);
+		return "item";
+	}*/
+	/**
+	 * 
+	 * @author 阿荣
+	 * @Description:直接访问生成好的静态资源
+	 * @date: 2018年9月2日 下午3:29:10
+	 * @param itemId
+	 * @return
+	 */
+	@RequestMapping(value="/item/{itemId}")
+	public ModelAndView selectItemDetail(@PathVariable Long itemId){
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("/WEB-INF/jsp/item/"+itemId+".html");
+		return modelAndView;
+	}
+}

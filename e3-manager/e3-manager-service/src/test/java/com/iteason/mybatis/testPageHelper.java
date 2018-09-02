@@ -1,4 +1,4 @@
-package com.iteason.mybatis;
+/*package com.iteason.mybatis;
 
 import static org.junit.Assert.*;
 
@@ -35,3 +35,4 @@ public class testPageHelper {
 	}
 	
 }
+*/

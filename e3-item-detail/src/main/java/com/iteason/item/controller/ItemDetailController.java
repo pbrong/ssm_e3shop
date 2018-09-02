@@ -49,7 +49,7 @@ public class ItemDetailController {
 	@RequestMapping(value="/item/{itemId}")
 	public ModelAndView selectItemDetail(@PathVariable Long itemId){
 		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.setViewName("WEB-INF/jsp/item/"+itemId+".html");
+		modelAndView.setViewName("item/153562192809655.jsp");
 		return modelAndView;
 	}
 }

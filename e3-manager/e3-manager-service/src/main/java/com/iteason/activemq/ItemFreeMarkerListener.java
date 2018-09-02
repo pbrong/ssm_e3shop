@@ -1,5 +1,7 @@
 package com.iteason.activemq;
 
+import static org.junit.Assert.*;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -12,6 +14,7 @@ import javax.jms.Message;
 import javax.jms.MessageListener;
 import javax.jms.TextMessage;
 
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 
@@ -48,7 +51,6 @@ public class ItemFreeMarkerListener implements MessageListener {
 	@Autowired
 	private TbItemSolrMapper tbItemSolrMapper;
 	
-	@SuppressWarnings("unchecked")
 	@Override
 	public void onMessage(Message message) {
 		//强转message
@@ -88,4 +90,5 @@ public class ItemFreeMarkerListener implements MessageListener {
 		
 	}
 
+	
 }

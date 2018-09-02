@@ -19,8 +19,8 @@
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/jsp/" />
-		<property name="suffix" value=".jsp" />
-	</bean>
+		<!-- <property name="suffix" value=".jsp" /> -->
+	</bean> 
 	
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="e3-item-detail"/>

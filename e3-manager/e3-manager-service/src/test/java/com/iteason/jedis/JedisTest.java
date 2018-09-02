@@ -1,4 +1,4 @@
-package com.iteason.jedis;
+/*package com.iteason.jedis;
 
 import static org.junit.Assert.*;
 
@@ -41,10 +41,11 @@ public class JedisTest {
 	
 	@Test
 	public void testJedisClient() throws Exception {
-		/*ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext-redis.xml");
+		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext-redis.xml");
 		JedisClient jedisClient = applicationContext.getBean(JedisClient.class);
 		jedisClient.set("jedisClient", "helloworld");
 		System.out.println(jedisClient.get("jedisClient"));
-		System.out.println("测试成功！");*/
+		System.out.println("测试成功！");
 	}
 }
+*/

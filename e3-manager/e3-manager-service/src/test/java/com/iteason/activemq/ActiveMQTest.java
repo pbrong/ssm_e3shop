@@ -1,4 +1,4 @@
-package com.iteason.activemq;
+/*package com.iteason.activemq;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
@@ -17,12 +17,12 @@ import org.junit.Test;
 
 
 public class ActiveMQTest {
-	/**
+	*//**
 	 * 
 	 * @author 阿荣
 	 * @Description:测试ActiveMQ PTP模式 点对点
 	 * @date: 2018年8月25日 下午3:46:12
-	 */
+	 *//*
 	@Test
 	public void testQueueProducer() throws Exception {
 		// 第一步：创建ConnectionFactory对象，需要指定服务端ip及端口号。
@@ -42,8 +42,8 @@ public class ActiveMQTest {
 		// 第六步：使用Session对象创建一个Producer对象。
 		MessageProducer producer = session.createProducer(queue);
 		// 第七步：创建一个Message对象，创建一个TextMessage对象。
-		/*TextMessage message = new ActiveMQTextMessage();
-		message.setText("hello activeMq,this is my first test.");*/
+		TextMessage message = new ActiveMQTextMessage();
+		message.setText("hello activeMq,this is my first test.");
 		TextMessage textMessage = session.createTextMessage("hello activeMq,this is my first test.");
 		// 第八步：使用Producer对象发送消息。
 		producer.send(textMessage);
@@ -93,12 +93,12 @@ public class ActiveMQTest {
 		connection.close();
 	}
 	
-	/**
+	*//**
 	 * 
 	 * @author 阿荣
 	 * @Description:测试ActiveMQ 发布订阅模式 点对面
 	 * @date: 2018年8月25日 下午3:46:12
-	 */
+	 *//*
 	@Test
 	public void testTopicProducer() throws Exception {
 		// 第一步：创建ConnectionFactory对象，需要指定服务端ip及端口号。
@@ -118,10 +118,10 @@ public class ActiveMQTest {
 		// 第六步：使用Session对象创建一个Producer对象。
 		MessageProducer producer = session.createProducer(topic);
 		// 第七步：创建一个Message对象，创建一个TextMessage对象。
-		/*
+		
 		 * TextMessage message = new ActiveMQTextMessage(); message.setText(
 		 * "hello activeMq,this is my first test.");
-		 */
+		 
 		TextMessage textMessage = session.createTextMessage("hello activeMq,this is my topic test");
 		// 第八步：使用Producer对象发送消息。
 		producer.send(textMessage);
@@ -172,3 +172,4 @@ public class ActiveMQTest {
 		connection.close();
 	}
 }
+*/
