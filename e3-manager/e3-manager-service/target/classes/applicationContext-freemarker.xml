@@ -11,7 +11,7 @@
 	 <!-- freemarker和spring整合 -->
 	 <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
 		<!-- 模板从别的项目中取 -->
-		<property name="templateLoaderPath" value="D:/workspace_e3shop/e3-item-detail/src/main/webapp/WEB-INF/ftl/" />
+		<property name="templateLoaderPath" value="/WEB-INF/ftl/" />
 		<property name="defaultEncoding" value="UTF-8" />
 	</bean>
 </beans>

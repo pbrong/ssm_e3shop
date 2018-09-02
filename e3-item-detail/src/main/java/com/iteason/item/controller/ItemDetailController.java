@@ -26,7 +26,7 @@ public class ItemDetailController {
 	/**
 	 * 商品详情(动态加载)
 	 */
-	/*@RequestMapping(value="/item/{itemId}")
+	@RequestMapping(value="/item/{itemId}")
 	public String selectItemDetail(@PathVariable Long itemId,Model model){
 		
 		TbItemSolrResult item  =  itemDetailService.selectItemDetail(itemId);
@@ -37,7 +37,7 @@ public class ItemDetailController {
 		//商品详情
 		model.addAttribute("itemDesc", desc);
 		return "item";
-	}*/
+	}
 	/**
 	 * 
 	 * @author 阿荣
@@ -45,11 +45,11 @@ public class ItemDetailController {
 	 * @date: 2018年9月2日 下午3:29:10
 	 * @param itemId
 	 * @return
-	 */
+	 *//*
 	@RequestMapping(value="/item/{itemId}")
 	public ModelAndView selectItemDetail(@PathVariable Long itemId){
 		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.setViewName("item/153562192809655.jsp");
+		modelAndView.setViewName("item/"+itemId+".htm");
 		return modelAndView;
-	}
+	}*/
 }

@@ -2,22 +2,23 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="fre" key="selection"/>
+		<item value="sell" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="fre"/>
-			<item value="incl"/>
-			<item value="in"/>
-			<item value="shor"/>
-			<item value="inc"/>
-			<item value="inclu"/>
-			<item value="fore"/>
+			<item value="sell"/>
+			<item value="images"/>
+			<item value="imagesw"/>
 			<item value="for"/>
+			<item value="fore"/>
+			<item value="&lt;#"/>
+			<item value="list"/>
+			<item value="image"/>
 		</list>
 		<list key="replacehistory">
+			<item value="sellPoint"/>
 			<item value="/"/>
 			<item value="com.iteason"/>
 		</list>
@@ -26,7 +27,7 @@
 		<item value="273" key="DIALOG_WIDTH"/>
 		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|微软雅黑" key="DIALOG_FONT_NAME"/>
 		<item value="399" key="DIALOG_HEIGHT"/>
-		<item value="847" key="DIALOG_X_ORIGIN"/>
-		<item value="197" key="DIALOG_Y_ORIGIN"/>
+		<item value="678" key="DIALOG_X_ORIGIN"/>
+		<item value="332" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

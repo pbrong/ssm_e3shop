@@ -91,10 +91,19 @@
 		 	<groupId>org.apache.activemq</groupId>
 		 	<artifactId>activemq-all</artifactId>
 		 </dependency>
-		 <dependency>
-		 	<groupId>org.freemarker</groupId>
-		 	<artifactId>freemarker</artifactId>
-		 </dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
+		<dependency>
+		    <groupId>org.freemarker</groupId>
+		    <artifactId>freemarker</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
   </dependencies>
   <!-- 如果不添加此节点mybatis的mapper.xml文件都会被漏掉。 -->
 	<build>
