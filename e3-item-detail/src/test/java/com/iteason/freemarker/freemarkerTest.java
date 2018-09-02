@@ -1,5 +1,7 @@
 package com.iteason.freemarker;
 
+import static org.junit.Assert.*;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.Writer;
@@ -32,6 +34,29 @@ public class freemarkerTest {
 		// 第七步：调用模板对象的process方法输出文件。
 		template.process(dataModel, out);
 		// 第八步：关闭流。
+		out.close();
+	}
+	
+	
+	@SuppressWarnings("resource")
+	@Test
+	public void freemarker_hello() throws Exception {
+		//1、创建Configuration对象
+		Configuration configuration = new Configuration(Configuration.getVersion());
+		//2、指定模板文件目录
+		configuration.setDirectoryForTemplateLoading(new File("D:/workspace_e3shop/e3-item-detail/src/main/webapp/WEB-INF/ftl"));
+		//3、指定模板文件
+		Template template = configuration.getTemplate("hello.ftl");
+		//4、指定要使用来填充内容的字符集
+		configuration.setDefaultEncoding("utf-8");
+		//5、创建Map，并将内容以键值对的形式指定
+		Map dataModel = new HashMap<>();
+		dataModel.put("hello", "first use freemarker --arong");
+		//6、指定文件输出位置
+		FileWriter out = new FileWriter(new File("D:/temp/hello.html"));
+		//7、调用模板对象的process方法输出文件。
+		template.process(dataModel, out);
+		//8、关流
 		out.close();
 	}
 }
