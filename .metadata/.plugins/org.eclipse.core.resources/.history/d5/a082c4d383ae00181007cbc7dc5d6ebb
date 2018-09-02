@@ -1,0 +1,32 @@
+package com.iteason.activemq;
+
+import javax.jms.Message;
+
+import javax.jms.MessageListener;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
+
+import freemarker.template.Configuration;
+
+/**
+ * 
+ * @author 阿荣
+ * @Description:用于接受更新的商品ID并且查询商品写入ftl模板中
+ * @date: 2018年9月2日 下午3:35:25
+ */
+public class ItemFreeMarkerListener implements MessageListener {
+
+	@Autowired
+	private FreeMarkerConfigurer freemarkerConfig;
+	
+	@Override
+	public void onMessage(Message message) {
+		//获取配置对象
+		Configuration configuration = freemarkerConfig.getConfiguration();
+		
+		
+
+	}
+
+}

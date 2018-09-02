@@ -1,0 +1,50 @@
+package com.iteason.activemq;
+
+import java.io.IOException;
+
+import javax.jms.Message;
+
+import javax.jms.MessageListener;
+import javax.jms.TextMessage;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
+
+import com.iteason.mapper.TbItemSolrMapper;
+
+import freemarker.template.Configuration;
+import freemarker.template.Template;
+
+/**
+ * 
+ * @author 阿荣
+ * @Description:用于接受更新的商品ID并且查询商品写入ftl模板中
+ * @date: 2018年9月2日 下午3:35:25
+ */
+public class ItemFreeMarkerListener implements MessageListener {
+
+	@Autowired
+	private FreeMarkerConfigurer freemarkerConfig;
+	
+	@Autowired
+	private TbItemSolrMapper tbItemSolrMapper;
+	
+	@Override
+	public void onMessage(Message message) {
+		//强转message
+		TextMessage textMessage = (TextMessage) message;
+		//获得商品ID
+		String itemId = textMessage.getText();
+		//获取配置对象
+		Configuration configuration = freemarkerConfig.getConfiguration();
+		//获取模板对象
+		try {
+			Template template = configuration.getTemplate("item.ftl");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		//通过商品id查询出商品并封装
+
+	}
+
+}

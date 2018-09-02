@@ -1,0 +1,72 @@
+package com.iteason.activemq;
+
+import java.io.IOException;
+
+import javax.jms.JMSException;
+import javax.jms.Message;
+
+import javax.jms.MessageListener;
+import javax.jms.TextMessage;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
+
+import com.iteason.mapper.TbItemCatMapper;
+import com.iteason.mapper.TbItemDescMapper;
+import com.iteason.mapper.TbItemMapper;
+import com.iteason.mapper.TbItemSolrMapper;
+import com.iteason.pojo.TbItem;
+
+import freemarker.template.Configuration;
+import freemarker.template.Template;
+
+/**
+ * 
+ * @author 阿荣
+ * @Description:用于接受更新的商品ID并且查询商品写入ftl模板中
+ * @date: 2018年9月2日 下午3:35:25
+ */
+public class ItemFreeMarkerListener implements MessageListener {
+	@Autowired
+	private TbItemMapper tbItemMapper;
+	
+	@Autowired
+	private TbItemDescMapper tbItemDescMapper;
+	
+	@Autowired
+	private TbItemCatMapper tbItemCatMapper;
+
+	@Autowired
+	private FreeMarkerConfigurer freemarkerConfig;
+	
+	@Autowired
+	private TbItemSolrMapper tbItemSolrMapper;
+	
+	@Override
+	public void onMessage(Message message) {
+		//强转message
+		TextMessage textMessage = (TextMessage) message;
+		//获得商品ID
+		String itemId = null;
+		try {
+			itemId = textMessage.getText();
+			//线程休眠0.5s等待事务提交
+			Thread.sleep(500);
+		} catch (JMSException | InterruptedException e1) {
+			e1.printStackTrace();
+		}
+			//根据商品ID查询商品和描述
+		TbItem item = tbItemMapper.selectByPrimaryKey(Long.parseLong(itemId));
+		//获取配置对象
+		Configuration configuration = freemarkerConfig.getConfiguration();
+		//获取模板对象
+		try {
+			Template template = configuration.getTemplate("item.ftl");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		//通过商品id查询出商品并封装
+		
+	}
+
+}

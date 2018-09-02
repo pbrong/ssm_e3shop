@@ -9,17 +9,11 @@
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd">
 
 
-	<!-- 配置JedisClientPool -->
-	<bean class="com.iteason.jedis.JedisClientPool" id="jedisClientPool">
-		<property name="jedisPool" ref="jedisPool"/>
-	</bean>
-	
-	<!-- 配置jedisPool -->
-	<bean class="redis.clients.jedis.JedisPool" id="jedisPool">
-	    <!--构造方法中注入参数 -->
-	    <!-- redis主机地址 -->
-		<constructor-arg name="host" value="47.106.133.57"/>
-		<!-- redis端口 -->
-		<constructor-arg name="port" value="6379"/>
+	 <!-- freemarker和spring整合 -->
+	 <bean id="freemarkerConfig"
+		class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+		<!-- 模板从别的项目中取 -->
+		<property name="templateLoaderPath" value="D:/workspace_e3shop/e3-item-detail/src/main/webapp/WEB-INF/ftl" />
+		<property name="defaultEncoding" value="UTF-8" />
 	</bean>
 </beans>
