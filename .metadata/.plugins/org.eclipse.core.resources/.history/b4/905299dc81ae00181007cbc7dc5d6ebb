@@ -38,17 +38,15 @@ public class ItemDetailController {
 		model.addAttribute("itemDesc", desc);
 		return "item";
 	}*/
-	/**
-	 * 
-	 * @author 阿荣
-	 * @Description:直接访问生成好的静态资源
-	 * @date: 2018年9月2日 下午3:29:10
-	 * @param itemId
-	 * @return
-	 */
+	
 	@RequestMapping(value="/item/{itemId}")
 	public ModelAndView selectItemDetail(@PathVariable Long itemId){
 		ModelAndView modelAndView = new ModelAndView();
+		
+		//商品信息
+		ModelAndView.addAttribute("item", item);
+		//商品详情
+		ModelAndView.addAttribute("itemDesc", desc);
 		modelAndView.setViewName("WEB-INF/jsp/item/"+itemId+".html");
 		return modelAndView;
 	}
